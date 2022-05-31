@@ -5,9 +5,9 @@ import {
 	FiTwitter,
 	FiLinkedin,
 	FiMail,
-	FiPhone,
+	FiInstagram,
 } from "react-icons/fi";
-import homeBg from '../../images/home_bg.jpg'
+import homeBg from "../../images/home_bg.jpg";
 import "./home.css";
 const Home = () => {
 	const [move, setMove] = useState(120);
@@ -31,11 +31,6 @@ const Home = () => {
 			link: "https://github.com/akshatmittal61",
 		},
 		{
-			icon: <FiTwitter />,
-			username: "@akshatmittal61",
-			link: "https://twitter.com/akshatmittal61",
-		},
-		{
 			icon: <FiLinkedin />,
 			username: "@akshatmittal61",
 			link: "https://www.linkedin.com/in/akshatmittal61",
@@ -46,9 +41,14 @@ const Home = () => {
 			link: "mailto:akshatmittal2506@gmail.com",
 		},
 		{
-			icon: <FiPhone />,
-			username: "+91 94568 49466",
-			link: "tel:919456849466",
+			icon: <FiInstagram />,
+			username: "@akshatmittal61",
+			link: "https://instagram.com/akshatmittal61",
+		},
+		{
+			icon: <FiTwitter />,
+			username: "@akshatmittal61",
+			link: "https://twitter.com/akshatmittal61",
 		},
 	];
 	return (
