@@ -402,6 +402,7 @@ body,
   transition: all var(--transition-time) ease-in-out;
   overflow-x: hidden;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 #root {

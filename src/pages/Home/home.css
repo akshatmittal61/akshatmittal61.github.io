@@ -1,6 +1,7 @@
 .home {
-  width: 100%;
+  width: 90%;
   height: 100vh;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +21,7 @@
   font-size: 4rem;
   line-height: 4.5rem;
   color: var(--indigo-700);
+  margin: 1rem 0;
 }
 .home-left-subtitle {
   font-size: 2rem;
@@ -27,7 +29,7 @@
   color: var(--indigo);
 }
 .home-left-socials {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .home-left-socials ul {
   list-style: none;
@@ -51,8 +53,7 @@
   align-items: center;
   text-decoration: none;
   border-radius: 50%;
-  font-size: 20px;
-  transition: 0;
+  transition: none;
 }
 .home-left-socials li a svg {
   z-index: 5;
