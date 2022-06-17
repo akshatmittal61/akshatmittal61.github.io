@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
 import NavButton from "./components/Navigation/NavButton";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
 	AOS.init();
@@ -21,6 +22,7 @@ const App = () => {
 			{openNavBar && <Navigation />}
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/contact" element={<Contact />} />
 			</Routes>
 		</>
 	);

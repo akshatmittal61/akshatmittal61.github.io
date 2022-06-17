@@ -1,0 +1,16 @@
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-head {
+  width: fit-content;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 1.5rem 1rem;
+}
+
+/*# sourceMappingURL=contact.css.map */
