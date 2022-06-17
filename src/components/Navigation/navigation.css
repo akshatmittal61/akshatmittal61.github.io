@@ -10,6 +10,8 @@
 }
 .navigation-button {
   position: fixed;
+  width: 3.5rem;
+  height: 3.5rem;
   top: 1.5rem;
   right: 1.5rem;
   display: flex;
@@ -21,6 +23,38 @@
   box-shadow: -8px 8px 31px -4px rgba(0, 0, 0, 0.1);
   box-shadow: var(--shadow-elevation-2dp);
   z-index: 7;
+}
+.navigation-button-bar {
+  width: 36px;
+  height: 2px;
+  border-radius: 500px;
+  background-color: var(--tcolor);
+  position: relative;
+}
+.navigation-button-bar::before, .navigation-button-bar::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  background-color: var(--tcolor);
+}
+.navigation-button-bar::before {
+  top: -6px;
+}
+.navigation-button-bar::after {
+  top: 6px;
+}
+.navigation-button-bar.true {
+  background-color: var(--bgcolor);
+}
+.navigation-button-bar.true::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.navigation-button-bar.true::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 .navigation-cover {
   width: calc(100vw - var(--side-width));

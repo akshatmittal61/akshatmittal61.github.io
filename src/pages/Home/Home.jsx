@@ -29,15 +29,29 @@ const Home = () => {
 					</div>
 					<div className="hero-buttons">
 						<ul className="hero-buttons-ul">
-							{socials.map((social, index) => (
-								<li key={index}>
-									<IconButton
-										icon={social.icon}
-										href={social.link}
-										title={social.username}
-									></IconButton>
-								</li>
-							))}
+							{socials.map((social, index) => {
+								return (
+									<li key={index}>
+										<IconButton
+											icon={social.icon}
+											href={social.link}
+											title={social.username}
+											style={{
+												color: social.color,
+											}}
+											onMouseOver={() => {
+												console.log(social.color);
+												document
+													.querySelector("body")
+													.style.setProperty(
+														"--social-color",
+														social.color
+													);
+											}}
+										></IconButton>
+									</li>
+								);
+							})}
 						</ul>
 					</div>
 				</div>

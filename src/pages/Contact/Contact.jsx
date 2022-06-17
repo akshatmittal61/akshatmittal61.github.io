@@ -73,7 +73,7 @@ const Contact = () => {
 							icon="chat"
 							value={userMessage.message}
 							onChange={handleChange}
-							rows={5}
+							rows={4}
 						/>
 						<div className="form-group">
 							<Button
@@ -98,10 +98,30 @@ const Contact = () => {
 										icon={social.icon}
 										href={social.icon}
 										title={social.username}
+										style={{
+											color: social.color,
+										}}
+										onMouseOver={() => {
+											console.log(social.color);
+											document
+												.querySelector("body")
+												.style.setProperty(
+													"--social-color",
+													social.color
+												);
+										}}
 									/>
 								</li>
 							))}
 						</ul>
+						<div className="contact-resume">
+							<Button
+								text="View my Resume"
+								icon="north_east"
+								link="/resume"
+								color="green"
+							/>
+						</div>
 					</section>
 				</div>
 			</Card>
