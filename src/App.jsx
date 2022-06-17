@@ -1,13 +1,16 @@
-import React from 'react'
-import Home from './pages/Home/Home'
-import './style.css'
+import React from "react";
+import Home from "./pages/Home/Home";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./style.css";
 
 const App = () => {
-  return (
-    <>
-        <Home />
-    </>
-  )
-}
+	AOS.init();
+	return (
+		<>
+			<Home />
+		</>
+	);
+};
 
-export default App
+export default App;
