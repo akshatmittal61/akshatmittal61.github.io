@@ -35,7 +35,7 @@ const Home = () => {
 										<IconButton
 											icon={social.icon}
 											href={social.link}
-											title={social.username}
+											data-title={social.username}
 											style={{
 												color: social.color,
 											}}

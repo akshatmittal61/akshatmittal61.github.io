@@ -93,11 +93,13 @@ const Contact = () => {
 					<section className="contact-socials">
 						<ul className="contact-ul">
 							{socials.map((social) => (
-								<li className="contact-li">
+								<li
+									className="contact-li"
+									data-title={social.username}
+								>
 									<IconButton
 										icon={social.icon}
 										href={social.icon}
-										title={social.username}
 										style={{
 											color: social.color,
 										}}
