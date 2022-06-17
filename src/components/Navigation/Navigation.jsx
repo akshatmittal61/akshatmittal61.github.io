@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import GlobalContext from "../../Context/GlobalContext";
 import routes from "../../routes";
 import MaterialIcons from "../MaterialIcons";
 import "./navigation.css";
 
 const Navigation = () => {
+	const { setOpenNavBar } = useContext(GlobalContext);
 	return (
 		<section className="navigation">
-			<main className="navigation-cover"></main>
+			<main
+				className="navigation-cover"
+				onClick={() => setOpenNavBar(false)}
+			></main>
 			<aside className="navigation-aside aside" data-aos="fade-left">
 				<nav className="aside-nav">
 					<ul className="aside-nav-ul">

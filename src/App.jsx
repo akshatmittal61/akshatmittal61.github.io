@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.css";
 import Navigation from "./components/Navigation/Navigation";
-import { useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
 import NavButton from "./components/Navigation/NavButton";
 
@@ -19,7 +19,9 @@ const App = () => {
 		<>
 			<NavButton />
 			{openNavBar && <Navigation />}
-			<Home />
+			<Routes>
+				<Route path="/" element={<Home />} />
+			</Routes>
 		</>
 	);
 };

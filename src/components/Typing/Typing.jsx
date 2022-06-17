@@ -10,7 +10,6 @@ const Typing = ({ text = "", children }) => {
 			await sleep(3 / Text.length);
 			setWidth(width + 1);
 		};
-		console.log(width);
 		if (width < Text.length) {
 			incWidth();
 		}

@@ -1,6 +1,8 @@
 import React from "react";
+import IconButton from "../../components/Button/IconButton";
 import Typing from "../../components/Typing/Typing";
 import avatar from "../../images/avatar.svg";
+import socials from "../../socials";
 import "./home.css";
 
 const Home = () => {
@@ -24,6 +26,19 @@ const Home = () => {
 									alt="Wave"
 								/>
 							</span>
+						</div>
+						<div className="hero-buttons">
+							<ul className="hero-buttons-ul">
+								{socials.map((social, index) => (
+									<li key={index}>
+										<IconButton
+											icon={social.icon}
+											href={social.link}
+											title={social.username}
+										></IconButton>
+									</li>
+								))}
+							</ul>
 						</div>
 					</div>
 				</div>

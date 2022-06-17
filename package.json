@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass src/style.scss:src/style.css src/components/Navigation/navigation.scss:src/components/Navigation/navigation.css src/components/Typing/typing.scss:src/components/Typing/typing.css src/pages/Home/home.scss:src/pages/Home/home.css -w",
+    "sass": "sass src/style.scss:src/style.css src/components/Navigation/navigation.scss:src/components/Navigation/navigation.css src/components/Button/button.scss:src/components/Button/button.css src/components/Typing/typing.scss:src/components/Typing/typing.css src/pages/Home/home.scss:src/pages/Home/home.css -w",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
