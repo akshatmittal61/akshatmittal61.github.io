@@ -2,16 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import routes from "../../routes";
 import MaterialIcons from "../MaterialIcons";
-import './navigation.css'
+import "./navigation.css";
 
 const Navigation = () => {
 	return (
 		<section className="navigation">
-			<button className="navigation-button icon">
-				<MaterialIcons>menu</MaterialIcons>
-			</button>
-            <main className="navigation-cover"></main>
-			<aside className="navigation-aside aside">
+			<main className="navigation-cover"></main>
+			<aside className="navigation-aside aside" data-aos="fade-left">
 				<nav className="aside-nav">
 					<ul className="aside-nav-ul">
 						{routes.map((route, index) => (

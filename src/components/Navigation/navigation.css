@@ -31,15 +31,15 @@
 }
 .navigation-aside {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: calc(var(--head-height) + 2.5vh);
+  right: 2rem;
 }
 
 .aside {
   width: var(--side-width);
-  height: 100vh;
-  padding-top: var(--head-height);
+  height: calc(100vh - var(--head-height) - 5vh);
   background-color: var(--bgcolor);
+  border-radius: 32px;
 }
 .aside-nav {
   width: 100%;
