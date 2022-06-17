@@ -6,7 +6,7 @@ const NavButton = () => {
 	const { openNavBar, setOpenNavBar } = useContext(GlobalContext);
 	return (
 		<button
-			className="navigation-button icon"
+			className="navigation-button"
 			onClick={() => setOpenNavBar((prev) => !prev)}
 		>
 			<MaterialIcons>{openNavBar ? "close" : "menu"}</MaterialIcons>
