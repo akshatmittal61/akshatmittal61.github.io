@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass src/style.scss:src/style.css src/components/Cursor/cursor.scss:src/components/Cursor/cursor.css src/components/Navigation/navigation.scss:src/components/Navigation/navigation.css src/components/Button/button.scss:src/components/Button/button.css src/components/Input/input.scss:src/components/Input/input.css src/components/Tooltip/tooltip.scss:src/components/Tooltip/tooltip.css src/components/Typing/typing.scss:src/components/Typing/typing.css src/components/Card/card.scss:src/components/Card/card.css src/pages/Home/home.scss:src/pages/Home/home.css src/pages/Contact/contact.scss:src/pages/Contact/contact.css -w",
+    "sass": "sass src/style.scss:src/style.css src/components/Cursor/cursor.scss:src/components/Cursor/cursor.css src/components/Navigation/navigation.scss:src/components/Navigation/navigation.css src/components/Button/button.scss:src/components/Button/button.css src/components/Input/input.scss:src/components/Input/input.css src/components/Tooltip/tooltip.scss:src/components/Tooltip/tooltip.css src/components/Typing/typing.scss:src/components/Typing/typing.css src/components/Card/card.scss:src/components/Card/card.css src/pages/Home/home.scss:src/pages/Home/home.css src/pages/Contact/contact.scss:src/pages/Contact/contact.css src/pages/NotFound/not-found.scss:src/pages/NotFound/not-found.css -w",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

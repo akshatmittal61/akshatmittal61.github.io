@@ -30,7 +30,10 @@ const Cursor = () => {
 		<span
 			className="cursor"
 			id="cursor"
-			style={{ left: cursorStyle.left, top: cursorStyle.top }}
+			style={{
+				left: cursorStyle.left,
+				top: cursorStyle.top,
+			}}
 		>
 			<span className="cursor-ball" id="cursor-ball"></span>
 		</span>

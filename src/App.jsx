@@ -9,6 +9,7 @@ import GlobalContext from "./Context/GlobalContext";
 import NavButton from "./components/Navigation/NavButton";
 import Contact from "./pages/Contact/Contact";
 import Cursor from "./components/Cursor/Cursor";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
 	AOS.init();
@@ -25,6 +26,7 @@ const App = () => {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</>
 	);

@@ -8,7 +8,6 @@ const NavButton = () => {
 			className="navigation-button"
 			onClick={() => setOpenNavBar((prev) => !prev)}
 		>
-			{/* <MaterialIcons>{openNavBar ? "close" : "menu"}</MaterialIcons> */}
 			<span className={`navigation-button-bar ${openNavBar}`}></span>
 		</button>
 	);

@@ -17,8 +17,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transition: all 1000ms ease-in;
-  transform: translate(-50%, -50%);
+  transition: all 75ms linear 1s;
+  transform: translate(-25%, -25%);
   background-color: rgb(141, 141, 141);
   overflow: auto;
   border-radius: 100%;
