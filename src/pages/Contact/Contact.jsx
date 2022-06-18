@@ -92,10 +92,11 @@ const Contact = () => {
 					</form>
 					<section className="contact-socials">
 						<ul className="contact-ul">
-							{socials.map((social) => (
+							{socials.map((social, index) => (
 								<li
 									className="contact-li"
 									data-title={social.username}
+									key={index}
 								>
 									<IconButton
 										icon={social.icon}
@@ -104,7 +105,6 @@ const Contact = () => {
 											color: social.color,
 										}}
 										onMouseOver={() => {
-											console.log(social.color);
 											document
 												.querySelector("body")
 												.style.setProperty(

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import GlobalContext from "../../Context/GlobalContext";
 import routes from "../../routes";
@@ -7,6 +7,16 @@ import "./navigation.css";
 
 const Navigation = () => {
 	const { setOpenNavBar } = useContext(GlobalContext);
+	useEffect(() => {
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Escape") setOpenNavBar(false);
+		});
+		return () => {
+			document.removeEventListener("keydown", (e) => {
+				if (e.key === "Escape") setOpenNavBar(false);
+			});
+		};
+	}, [setOpenNavBar]);
 	return (
 		<section className="navigation">
 			<main

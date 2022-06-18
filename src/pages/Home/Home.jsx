@@ -4,6 +4,7 @@ import Card from "../../components/Card/Card";
 import Typing from "../../components/Typing/Typing";
 import avatar from "../../images/avatar.svg";
 import socials from "../../socials";
+import wave from "../../images/wave.gif";
 import "./home.css";
 
 const Home = () => {
@@ -21,26 +22,24 @@ const Home = () => {
 					<div className="hero-text">
 						<Typing>Hey there, I'm Akshat Mittal</Typing>
 						<span>
-							<img
-								src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
-								alt="Wave"
-							/>
+							<img src={wave} alt="Wave" />
 						</span>
 					</div>
 					<div className="hero-buttons">
 						<ul className="hero-buttons-ul">
 							{socials.map((social, index) => {
 								return (
-									<li key={index}>
+									<li
+										key={index}
+										data-title={social.username}
+									>
 										<IconButton
 											icon={social.icon}
 											href={social.link}
-											data-title={social.username}
 											style={{
 												color: social.color,
 											}}
 											onMouseOver={() => {
-												console.log(social.color);
 												document
 													.querySelector("body")
 													.style.setProperty(
