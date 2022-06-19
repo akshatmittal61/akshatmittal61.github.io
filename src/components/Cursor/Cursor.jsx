@@ -8,7 +8,6 @@ const Cursor = () => {
 	});
 	useEffect(() => {
 		window.addEventListener("mousemove", (e) => {
-			console.log(`${e.pageX}px`, `${e.pageY}px`);
 			setCursorStyle((prev) => ({
 				...prev,
 				left: `${e.pageX}px`,

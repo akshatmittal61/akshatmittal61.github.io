@@ -2,8 +2,8 @@ import React from "react";
 import Card from "../../components/Card/Card";
 import dev_activity from "../../images/developer_activity.svg";
 import skills from "../../utils/skills";
-import bulb from '../../images/bulb_on.svg'
-import './skills.css'
+import bulb from "../../images/bulb_on.svg";
+import "./skills.css";
 
 const Skills = () => {
 	return (
@@ -17,7 +17,11 @@ const Skills = () => {
 					</div>
 					<div className="skills-body">
 						<div className="skills-body-image">
-							<img src={dev_activity} alt="Developer Activiy" />
+							<img
+								src={dev_activity}
+								alt="Developer Activiy"
+								data-aos="zoom-in"
+							/>
 						</div>
 						<div className="skills-body-content">
 							<div className="skills-body-head">
@@ -29,8 +33,8 @@ const Skills = () => {
 								{skills.map((skill, index) => (
 									<span
 										className="skills-body-icon"
+										key={index}
 										data-title={skill.title}
-                                        key={index}
 									>
 										<img
 											src={skill.icon}
@@ -40,7 +44,10 @@ const Skills = () => {
 								))}
 							</div>
 							<div className="skills-body-text">
-								<ul className="skill-body-ul" style={{listStyle: `url(${bulb})`}}>
+								<ul
+									className="skill-body-ul"
+									style={{ listStyle: `url(${bulb})` }}
+								>
 									<li>
 										Develop highly interactive frontend /
 										user interfaces for web applications

@@ -1,0 +1,33 @@
+.about {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2.5rem 4rem;
+}
+.about-head {
+  width: 100%;
+}
+.about-head__h2 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+.about-body {
+  margin: 1.25rem 0;
+}
+.about-body__p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-flow: column;
+}
+.about-body__p img {
+  object-fit: cover;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+/*# sourceMappingURL=about.css.map */

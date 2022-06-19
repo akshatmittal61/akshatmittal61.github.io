@@ -11,6 +11,7 @@ import Contact from "./pages/Contact/Contact";
 import Cursor from "./components/Cursor/Cursor";
 import NotFound from "./pages/NotFound/NotFound";
 import Skills from "./pages/Skills/Skills";
+import About from "./pages/About/About";
 
 const App = () => {
 	AOS.init();
@@ -26,6 +27,7 @@ const App = () => {
 			{openNavBar && <Navigation />}
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
 				<Route path="/skills" element={<Skills />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<NotFound />} />
