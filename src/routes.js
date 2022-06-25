@@ -17,7 +17,7 @@ const routes = [
 	{
 		icon: "insights",
 		title: "Projects",
-		route: "/",
+		route: "/projects",
 	},
 	{
 		icon: "call",

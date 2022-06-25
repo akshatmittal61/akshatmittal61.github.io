@@ -13,11 +13,12 @@ const Button = ({
 	size = "",
 	icon = "",
 	onClick,
+	children,
 	...rest
 }) => {
 	const location = useLocation();
 	const navigate = useNavigate();
-	let classes = "btn";
+	let classes = "btn ";
 	classes += className;
 	classes += ` btn-${color}`;
 	if (size === "small") classes += " btn-sm";
