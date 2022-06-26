@@ -52,7 +52,7 @@ const projects = [
 	{
 		title: "srm",
 		icon: srmIcon,
-		color: "yellow",
+		color: "blue",
 		owner: "akshatmittal61",
 		tools: ["React.js", "Node.js", "Express.js", "Mongo DB"],
 	},

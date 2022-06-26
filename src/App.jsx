@@ -8,11 +8,12 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
 import NavButton from "./components/Navigation/NavButton";
 import Contact from "./pages/Contact/Contact";
-import Cursor from "./components/Cursor/Cursor";
+import Cursor from "./Layout/Cursor/Cursor";
 import NotFound from "./pages/NotFound/NotFound";
 import Skills from "./pages/Skills/Skills";
 import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
+import Theme from "./Layout/Theme/Theme";
 
 const App = () => {
 	AOS.init();
@@ -24,6 +25,7 @@ const App = () => {
 	return (
 		<>
 			<Cursor />
+			<Theme />
 			<NavButton />
 			{openNavBar && <Navigation />}
 			<Routes>

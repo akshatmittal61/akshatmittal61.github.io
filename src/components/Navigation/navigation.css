@@ -108,6 +108,9 @@
 .aside-nav-li a:hover {
   background-color: var(--blue-100);
 }
+body.dark .aside-nav-li a:hover {
+  color: var(--black);
+}
 .aside-nav-li a span {
   height: 1.5rem;
   display: flex;

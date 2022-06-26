@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import _ from "lodash";
 import { FiGithub, FiLink } from "react-icons/fi";
 import { skillsMap } from "../../utils/skills";
 import Chip from "../../components/Chip/Chip";
+import GlobalContext from "../../Context/GlobalContext";
 
 const Project = ({
 	title,
@@ -15,6 +16,7 @@ const Project = ({
 	tools,
 	color,
 }) => {
+	const { theme } = useContext(GlobalContext);
 	return (
 		<div className="project">
 			<div
@@ -23,7 +25,11 @@ const Project = ({
 			></div>
 			<div
 				className="project-back"
-				style={{ backgroundColor: `var(--${color}-100)` }}
+				style={{
+					backgroundColor: `var(--${color}-${
+						theme === "light" ? 100 : 700
+					})`,
+				}}
 			>
 				<div className="project-icon">
 					<img src={icon} alt={title} />

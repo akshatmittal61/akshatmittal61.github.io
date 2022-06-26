@@ -10,6 +10,9 @@ export const GlobalProvider = ({ children }) => {
 	};
 	const [isLoading, setIsLoading] = useState(false);
 	const [openNavBar, setOpenNavBar] = useState(false);
+	const [theme, setTheme] = useState(
+		localStorage.getItem("theme") || "light"
+	);
 	return (
 		<GlobalContext.Provider
 			value={{
@@ -18,6 +21,8 @@ export const GlobalProvider = ({ children }) => {
 				breakpoint,
 				openNavBar,
 				setOpenNavBar,
+				theme,
+				setTheme,
 			}}
 		>
 			{children}
