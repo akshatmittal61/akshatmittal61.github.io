@@ -109,7 +109,7 @@ const Contact = () => {
 								>
 									<IconButton
 										icon={social.icon}
-										href={social.icon}
+										href={social.link}
 										style={{
 											color: social.color,
 										}}
