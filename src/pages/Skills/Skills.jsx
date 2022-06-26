@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../../components/Card/Card";
 import dev_activity from "../../images/developer_activity.svg";
 import skills from "../../utils/skills";
 import bulb from "../../images/bulb_on.svg";
 import "./skills.css";
+import GlobalContext from "../../Context/GlobalContext";
 
 const Skills = () => {
+	const { breakpoint } = useContext(GlobalContext);
 	return (
 		<main className="skills">
 			<Card>
 				<div className="skills-container">
 					<div className="skills-head">
 						<h1 className="skills-head__h1">
-							Stuff that I work on
+							{breakpoint("mobile")
+								? "My Skills"
+								: "Stuff that I work on"}
 						</h1>
 					</div>
 					<div className="skills-body">

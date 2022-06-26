@@ -165,11 +165,6 @@
   align-items: flex-start;
   padding: 2.5rem 4rem;
 }
-@media (max-width: 672px) {
-  .about {
-    text-align: center;
-  }
-}
 .about-head {
   width: 100%;
   display: flex;

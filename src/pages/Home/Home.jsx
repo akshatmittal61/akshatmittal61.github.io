@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import IconButton from "../../components/Button/IconButton";
 import Card from "../../components/Card/Card";
 import Typing from "../../components/Typing/Typing";
@@ -6,8 +6,10 @@ import avatar from "../../images/avatar.svg";
 import socials from "../../utils/socials";
 import wave from "../../images/wave.gif";
 import "./home.css";
+import GlobalContext from "../../Context/GlobalContext";
 
 const Home = () => {
+	const { breakpoint } = useContext(GlobalContext);
 	return (
 		<main className="home">
 			<Card>
@@ -20,10 +22,19 @@ const Home = () => {
 						/>
 					</div>
 					<div className="hero-text">
-						<Typing>Hey there, I'm Akshat Mittal</Typing>
-						<span>
-							<img src={wave} alt="Wave" />
-						</span>
+						{breakpoint("mobile") ? (
+							<>
+								<Typing>Hey there,</Typing>
+								<Typing>I'm Akshat Mittal</Typing>
+							</>
+						) : (
+							<>
+								<Typing>Hey there, I'm Akshat Mittal</Typing>
+								<span>
+									<img src={wave} alt="Wave" />
+								</span>
+							</>
+						)}
 					</div>
 					<div className="hero-buttons">
 						<ul className="hero-buttons-ul">
