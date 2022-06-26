@@ -70,6 +70,8 @@
   height: 100%;
 }
 .contact-socials ul {
+  width: 60%;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -77,7 +79,7 @@
   flex-wrap: wrap;
 }
 .contact-socials li {
-  margin-right: 1.5rem;
+  margin: 1.5rem;
   --size: 54px;
   width: var(--size);
   height: var(--size);

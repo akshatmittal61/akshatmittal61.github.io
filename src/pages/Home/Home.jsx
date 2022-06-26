@@ -3,7 +3,7 @@ import IconButton from "../../components/Button/IconButton";
 import Card from "../../components/Card/Card";
 import Typing from "../../components/Typing/Typing";
 import avatar from "../../images/avatar.svg";
-import socials from "../../socials";
+import socials from "../../utils/socials";
 import wave from "../../images/wave.gif";
 import "./home.css";
 

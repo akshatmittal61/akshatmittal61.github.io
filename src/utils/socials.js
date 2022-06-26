@@ -4,6 +4,7 @@ import {
 	FiLinkedin,
 	FiMail,
 	FiInstagram,
+	FiPhone,
 } from "react-icons/fi";
 
 const socials = [
@@ -24,6 +25,12 @@ const socials = [
 		username: "akshatmittal2506@gmail.com",
 		link: "mailto:akshatmittal2506@gmail.com",
 		color: "var(--red-700)",
+	},
+	{
+		icon: <FiPhone />,
+		username: "+919456849466",
+		link: "tel:+919456849466",
+		color: "var(--indigo-700)",
 	},
 	{
 		icon: <FiInstagram />,

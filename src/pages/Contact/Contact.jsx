@@ -3,7 +3,7 @@ import Button from "../../components/Button/Button";
 import IconButton from "../../components/Button/IconButton";
 import Card from "../../components/Card/Card";
 import Input, { TextArea } from "../../components/Input/Input";
-import socials from "../../socials";
+import socials from "../../utils/socials";
 import "./contact.css";
 
 const Contact = () => {
