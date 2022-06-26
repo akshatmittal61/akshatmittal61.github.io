@@ -3,8 +3,10 @@ import css from "../images/icons/css.svg";
 import js from "../images/icons/js.svg";
 import sass from "../images/icons/sass.svg";
 import mongodb from "../images/icons/mongodb.svg";
+import mySql from "../images/icons/mysql.svg";
 import express from "../images/icons/express.svg";
 import react from "../images/icons/react.svg";
+import mui from "../images/icons/mui.svg";
 import node from "../images/icons/node.svg";
 import c from "../images/icons/C.svg";
 import cpp from "../images/icons/cpp.svg";
@@ -33,6 +35,10 @@ const skills = [
 		icon: react,
 	},
 	{
+		title: "MUI",
+		icon: mui,
+	},
+	{
 		title: "Node.js",
 		icon: node,
 	},
@@ -43,6 +49,10 @@ const skills = [
 	{
 		title: "Mongo DB",
 		icon: mongodb,
+	},
+	{
+		title: "MySQL",
+		icon: mySql,
 	},
 	{
 		title: "Git",
@@ -62,4 +72,12 @@ const skills = [
 	},
 ];
 
+const skillsMap = new Map();
+
+skills.forEach((skill) => {
+	skillsMap.set(skill.title, skill.icon);
+});
+
 export default skills;
+
+export { skillsMap };

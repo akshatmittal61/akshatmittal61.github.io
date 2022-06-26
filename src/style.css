@@ -498,6 +498,7 @@ select::placeholder {
   font-weight: 500;
   z-index: 99999;
   visibility: hidden;
+  transition: all 0.1s ease-in-out;
 }
 [data-title]:hover:after {
   opacity: 1;

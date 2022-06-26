@@ -197,4 +197,75 @@
   height: 2.25rem;
 }
 
+.project {
+  width: 22.5rem;
+  height: 22.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-elevation-2dp);
+  border-radius: 8px;
+  margin: 1rem;
+  position: relative;
+}
+.project-front {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.project-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  padding: 1rem;
+}
+.project-back > * {
+  margin: 0.25rem 0;
+}
+.project:hover .project-back {
+  top: 0;
+}
+.project-icon {
+  width: 5rem;
+  height: 5rem;
+}
+.project-icon img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+.project-title {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0.75rem 0;
+  font-weight: 700;
+}
+.project-tools span {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-tools img {
+  object-fit: cover;
+  width: 2rem;
+  height: 2rem;
+}
+.project a {
+  white-space: nowrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project a svg {
+  margin: 0 0.5rem 0 0;
+}
+
 /*# sourceMappingURL=projects.css.map */
