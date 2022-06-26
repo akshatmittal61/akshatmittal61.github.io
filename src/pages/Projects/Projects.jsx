@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import _ from "lodash";
 import "./projects.css";
 import Project from "./Project";
 import { default as projectNames } from "../../utils/projects.js";

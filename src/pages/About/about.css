@@ -172,6 +172,15 @@
 }
 .about-head {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about-head img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10%;
 }
 .about-head__h2 {
   font-size: 4rem;
@@ -202,7 +211,7 @@
   height: 24rem;
   border-radius: 16px;
   overflow: hidden;
-  margin: 1rem 0;
+  margin: 2rem 0;
   outline: 2px solid var(--back-shadow-light);
   box-shadow: var(--shadow-elevation-4dp);
   text-align: center;

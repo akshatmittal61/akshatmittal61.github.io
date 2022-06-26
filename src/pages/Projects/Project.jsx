@@ -1,7 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import { FiGithub, FiLink } from "react-icons/fi";
-import skills, { skillsMap } from "../../utils/skills";
+import { skillsMap } from "../../utils/skills";
 
 const Project = ({
 	title,
