@@ -21,7 +21,7 @@ const App = () => {
 	const location = useLocation();
 	useEffect(() => {
 		setOpenNavBar(false);
-	}, [location.pathname]);
+	}, [location.pathname, setOpenNavBar]);
 	return (
 		<>
 			<Cursor />

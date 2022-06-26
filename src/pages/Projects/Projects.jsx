@@ -25,14 +25,14 @@ const Projects = () => {
 		};
 		return projectData;
 	};
-	const loadData = async () => {
-		projectNames.forEach((project) => {
-			fetchDataForRepo(project).then((res) => {
-				setProjects((prev) => [...prev, res]);
-			});
-		});
-	};
 	useEffect(() => {
+		const loadData = async () => {
+			projectNames.forEach((project) => {
+				fetchDataForRepo(project).then((res) => {
+					setProjects((prev) => [...prev, res]);
+				});
+			});
+		};
 		loadData();
 	}, []);
 
