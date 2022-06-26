@@ -2,6 +2,7 @@ import React from "react";
 import _ from "lodash";
 import { FiGithub, FiLink } from "react-icons/fi";
 import { skillsMap } from "../../utils/skills";
+import Chip from "../../components/Chip/Chip";
 
 const Project = ({
 	title,
@@ -52,6 +53,11 @@ const Project = ({
 						<span key={index} data-title={tool}>
 							<img src={skillsMap.get(tool)} alt={tool} />
 						</span>
+					))}
+				</div>
+				<div className="project-tags">
+					{tags.map((tag, index) => (
+						<Chip key={index}>{tag}</Chip>
 					))}
 				</div>
 			</div>

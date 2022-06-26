@@ -258,6 +258,11 @@
   width: 2rem;
   height: 2rem;
 }
+.project-tags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .project a {
   white-space: nowrap;
   display: flex;
