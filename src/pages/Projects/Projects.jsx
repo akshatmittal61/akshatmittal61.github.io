@@ -8,7 +8,7 @@ const Projects = () => {
 	const [projects, setProjects] = useState([]);
 	const fetchDataForRepo = async (repo) => {
 		let response = await axios(
-			`https://api.github.com/repos/akshatmittal61/${repo.title}`
+			`https://api.github.com/repos/${repo.owner}/${repo.title}`
 		);
 		const { name, description, full_name, html_url, homepage, topics } =
 			response.data;

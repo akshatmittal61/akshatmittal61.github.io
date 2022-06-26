@@ -228,6 +228,9 @@
 .project-back > * {
   margin: 0.25rem 0;
 }
+.project:hover {
+  box-shadow: var(--shadow-elevation-4dp);
+}
 .project:hover .project-back {
   top: 0;
 }
