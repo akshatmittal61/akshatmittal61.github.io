@@ -120,7 +120,7 @@ const Contact = () => {
 							<Button
 								text="View my Resume"
 								icon="north_east"
-								link="/resume"
+								href="https://drive.google.com/file/d/1yKByRH6La0rOupNX3l29kcC-xue93m62/view?usp=sharing"
 								color="green"
 							/>
 						</div>

@@ -12,6 +12,7 @@ import Cursor from "./components/Cursor/Cursor";
 import NotFound from "./pages/NotFound/NotFound";
 import Skills from "./pages/Skills/Skills";
 import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
 
 const App = () => {
 	AOS.init();
@@ -29,6 +30,7 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/skills" element={<Skills />} />
+				<Route path="/projects" element={<Projects />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>

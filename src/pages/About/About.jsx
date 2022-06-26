@@ -37,6 +37,15 @@ const About = () => {
 			image: epmocIcon,
 		},
 		{
+			title: "Coding Contributors Lair",
+			about: "Open-Source | Projects | A growing community.",
+			profile: "https://github.com/CodingContributorsLair/",
+			color: "purple",
+			post: "Open Source Contributor",
+			period: "June 2022 - Present",
+			image: epmocIcon,
+		},
+		{
 			title: "Eunoia - IIITU",
 			about: "Unified Literary and Cultural club of IIIT Una",
 			profile: "https://www.linkedin.com/company/eunoia-iiitu/",
