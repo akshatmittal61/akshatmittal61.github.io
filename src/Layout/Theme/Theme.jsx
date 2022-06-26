@@ -7,7 +7,6 @@ import "./theme.css";
 const Theme = () => {
 	const { theme, setTheme } = useContext(GlobalContext);
 	useEffect(() => {
-		console.log(theme);
 		localStorage.setItem("theme", theme);
 		document.body.setAttribute("class", theme);
 	}, [theme]);
