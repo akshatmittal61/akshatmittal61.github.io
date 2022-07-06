@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import Home from "./pages/Home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.css";
@@ -7,14 +6,9 @@ import Navigation from "./components/Navigation/Navigation";
 import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
 import NavButton from "./components/Navigation/NavButton";
-import Contact from "./pages/Contact/Contact";
 import Cursor from "./Layout/Cursor/Cursor";
-import NotFound from "./pages/NotFound/NotFound";
-import Skills from "./pages/Skills/Skills";
-import About from "./pages/About/About";
-import Projects from "./pages/Projects/Projects";
 import Theme from "./Layout/Theme/Theme";
-import Resume from "./pages/Resume";
+import { mappedRoutes } from "./routes";
 
 const App = () => {
 	AOS.init();
@@ -30,13 +24,13 @@ const App = () => {
 			<NavButton />
 			{openNavBar && <Navigation />}
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/skills" element={<Skills />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/resume" element={<Resume />} />
-				<Route path="*" element={<NotFound />} />
+				{mappedRoutes.map((route, index) => (
+					<Route
+						path={route.route}
+						element={route.component}
+						key={index}
+					/>
+				))}
 			</Routes>
 		</>
 	);
