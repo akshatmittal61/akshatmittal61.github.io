@@ -14,6 +14,7 @@ import Skills from "./pages/Skills/Skills";
 import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Theme from "./Layout/Theme/Theme";
+import Resume from "./pages/Resume";
 
 const App = () => {
 	AOS.init();
@@ -34,6 +35,7 @@ const App = () => {
 				<Route path="/skills" element={<Skills />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/resume" element={<Resume />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</>
