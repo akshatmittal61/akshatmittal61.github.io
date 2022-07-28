@@ -12,16 +12,18 @@ import { mappedRoutes } from "./routes";
 
 const App = () => {
 	AOS.init();
-	const { openNavBar, setOpenNavBar } = useContext(GlobalContext);
+	const { openNavBar, setOpenNavBar, breakpoint } = useContext(GlobalContext);
 	const location = useLocation();
 	useEffect(() => {
 		setOpenNavBar(false);
 	}, [location.pathname, setOpenNavBar]);
 	return (
 		<>
-			<Cursor />
-			<Theme />
-			<NavButton />
+			{!breakpoint("mobile") && location.pathname !== "/resume" && (
+				<Cursor />
+			)}
+			{location.pathname !== "/resume" && <Theme />}
+			{location.pathname !== "/resume" && <NavButton />}
 			{openNavBar && <Navigation />}
 			<Routes>
 				{mappedRoutes.map((route, index) => (
