@@ -68,9 +68,15 @@
   top: calc(var(--head-height) + 2.5vh);
   right: 2rem;
 }
+@media (max-width: 672px) {
+  .navigation-aside {
+    right: 0;
+  }
+}
 
 .aside {
   width: var(--side-width);
+  max-width: 100%;
   height: calc(100vh - var(--head-height) - 5vh);
   background-color: var(--bgcolor);
   border-radius: 32px;
