@@ -5,6 +5,7 @@ import {
 	FiMail,
 	FiInstagram,
 	FiPhone,
+	FiCodepen,
 } from "react-icons/fi";
 
 const socials = [
@@ -27,9 +28,9 @@ const socials = [
 		color: "var(--red-700)",
 	},
 	{
-		icon: <FiPhone />,
-		username: "+919456849466",
-		link: "tel:+919456849466",
+		icon: <FiCodepen />,
+		username: "akshatmittal61",
+		link: "https://codepen.io/akshatmittal61",
 		color: "var(--indigo-700)",
 	},
 	{

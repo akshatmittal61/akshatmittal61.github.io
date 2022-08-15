@@ -10,9 +10,7 @@ export const GlobalProvider = ({ children }) => {
 	};
 	const [isLoading, setIsLoading] = useState(false);
 	const [openNavBar, setOpenNavBar] = useState(false);
-	const [theme, setTheme] = useState(
-		localStorage.getItem("theme") || "light"
-	);
+	const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 	return (
 		<GlobalContext.Provider
 			value={{
