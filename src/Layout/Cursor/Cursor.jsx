@@ -34,7 +34,10 @@ const Cursor = () => {
 				top: cursorStyle.top,
 			}}
 		>
-			<span className="cursor-ball" id="cursor-ball"></span>
+			<span className="cursor-top"></span>
+			<span className="cursor-right"></span>
+			<span className="cursor-bottom"></span>
+			<span className="cursor-left"></span>
 		</span>
 	);
 };

@@ -4,7 +4,6 @@ import {
 	FiLinkedin,
 	FiMail,
 	FiInstagram,
-	FiPhone,
 	FiCodepen,
 } from "react-icons/fi";
 

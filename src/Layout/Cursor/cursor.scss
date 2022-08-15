@@ -1,4 +1,4 @@
-#cursor {
+.cursor {
 	width: 24px;
 	height: 24px;
 	border-radius: 100%;
@@ -10,17 +10,34 @@
 	transform: translate(-50%, -50%);
 	z-index: 999999;
 	pointer-events: none;
-	&-ball {
-		width: 8px;
-		height: 8px;
+	& > * {
 		position: absolute;
-		left: 50%;
-		top: 50%;
-		transition: all 75ms linear 1s;
-		transform: translate(-25%, -25%);
 		background-color: rgb(141, 141, 141);
-		overflow: auto;
-		border-radius: 100%;
-		pointer-events: none;
+	}
+	&-top,
+	&-bottom {
+		width: 1px;
+		height: 7px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&-left,
+	&-right {
+		width: 7px;
+		height: 1px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&-top {
+		top: 0;
+	}
+	&-bottom {
+		bottom: 0;
+	}
+	&-left {
+		left: 0;
+	}
+	&-right {
+		right: 0;
 	}
 }

@@ -1,4 +1,4 @@
-#cursor {
+.cursor {
   width: 24px;
   height: 24px;
   border-radius: 100%;
@@ -11,18 +11,33 @@
   z-index: 999999;
   pointer-events: none;
 }
-#cursor-ball {
-  width: 8px;
-  height: 8px;
+.cursor > * {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transition: all 75ms linear 1s;
-  transform: translate(-25%, -25%);
   background-color: rgb(141, 141, 141);
-  overflow: auto;
-  border-radius: 100%;
-  pointer-events: none;
+}
+.cursor-top, .cursor-bottom {
+  width: 1px;
+  height: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cursor-left, .cursor-right {
+  width: 7px;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cursor-top {
+  top: 0;
+}
+.cursor-bottom {
+  bottom: 0;
+}
+.cursor-left {
+  left: 0;
+}
+.cursor-right {
+  right: 0;
 }
 
 /*# sourceMappingURL=cursor.css.map */

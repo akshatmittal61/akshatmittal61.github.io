@@ -722,6 +722,11 @@ select::placeholder {
   background-color: var(--ast-global-color-0);
 }
 
+::selection {
+  background-color: var(--green);
+  color: var(--bgcolor);
+}
+
 .material-symbols-outlined {
   display: inline-flex;
   justify-content: center;
