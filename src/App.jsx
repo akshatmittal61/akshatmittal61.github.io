@@ -22,8 +22,12 @@ const App = () => {
 			{!breakpoint("mobile") && location.pathname !== "/resume" && (
 				<Cursor />
 			)}
-			{location.pathname !== "/resume" && <Theme />}
-			{location.pathname !== "/resume" && <NavButton />}
+			{location.pathname !== "/resume" && (
+				<>
+					<Theme />
+					<NavButton />
+				</>
+			)}
 			{openNavBar && <Navigation />}
 			<Routes>
 				{mappedRoutes.map((route, index) => (

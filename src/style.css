@@ -72,6 +72,24 @@
   --font-gilroy-thin: "Gilroy-Thin", Cabin, -apple-system, BlinkMacSystemFont,
   	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
   	"Helvetica Neue", sans-serif;
+  --font-overcame-regular: "Overcame-Regular", Cabin, -apple-system,
+  	BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  	"Open Sans", "Helvetica Neue", sans-serif;
+  --font-overcame-bold: "Overcame-Bold", Cabin, -apple-system,
+  	BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  	"Open Sans", "Helvetica Neue", sans-serif;
+  --font-overcame-italic: "Overcame-Italic", Cabin, -apple-system,
+  	BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  	"Open Sans", "Helvetica Neue", sans-serif;
+  --font-overcame-bold-italic: "Overcame-Bold-Italic", Cabin, -apple-system,
+  	BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  	"Open Sans", "Helvetica Neue", sans-serif;
+  --font-overcame-outline: "Overcame-Outline", Cabin, -apple-system,
+  	BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  	"Open Sans", "Helvetica Neue", sans-serif;
+  --font-helvetica-outline: "Helvetica-Outline", Cabin, -apple-system,
+  	BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  	"Open Sans", "Helvetica Neue", sans-serif;
   --color-background-footer: #242326;
   --color-main: #4e8bd2;
   --color-main-hover: #447ab8;
@@ -372,6 +390,48 @@
   font-family: "Gilroy-Thin";
   src: url("./fonts/Gilroy/Gilroy-Thin.eot");
   src: url("./fonts/Gilroy/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("./fonts/Gilroy/Gilroy-Thin.woff") format("woff"), url("./fonts/Gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overcame-Regular";
+  src: url("./fonts/Overcame/Overcame-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overcame-Outline";
+  src: url("./fonts/Overcame/Overcame-Outline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overcame-Bold";
+  src: url("./fonts/Overcame/Overcame-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overcame-Italic";
+  src: url("./fonts/Overcame/Overcame-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overcame-Bold-Italic";
+  src: url("./fonts/Overcame/Overcame-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica-Outline";
+  src: url("./fonts/Helvetica/Helvetica-Outline.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
