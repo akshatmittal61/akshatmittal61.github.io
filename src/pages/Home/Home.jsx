@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import dotsTriangle from "../../images/dots-triangle.svg";
 import socials from "../../utils/socials";
 import wave from "../../images/wave.gif";
+import people from "../../images/people.svg";
 import akshat from "../../images/Akshat_Transparent.png";
 import "./home.css";
+import Button from "../../components/Button/Button";
+import GlobalContext from "../../Context/GlobalContext";
+import skills from "../../utils/skills";
+import bulb from "../../images/bulb_on.svg";
 
 const Home = () => {
+	const { breakpoint } = useContext(GlobalContext);
+	const skillsPoints = [
+		"Refined Code writing, Smoother operations",
+		"Develop highly interactive and user engaging interfaces for web applications",
+		"Desinging dynamic, cross-browser compatible and responsive layouts for desktop, tablet and mobile screens",
+		"Backend Development in Express framework",
+		"Database Managment in SQL and MongoDB",
+	];
 	return (
 		<main className="home">
 			<section className="home-hero">
@@ -36,7 +49,7 @@ const Home = () => {
 			</div>
 			<section className="home-about">
 				<div className="home-about-head">
-					<h1>
+					<h1 data-aos="fade-right">
 						<span>About </span>
 						<span className="outline">Me</span>
 					</h1>
@@ -60,13 +73,63 @@ const Home = () => {
 							technologies arising in the world of web, android
 							and ML and many more.
 						</span>
+						<Button
+							text="Read More"
+							color="green"
+							icon="north_east"
+							size="large"
+							link="/about"
+						/>
 					</div>
 					<div className="home-about-body-image">
-						<img src={akshat} alt="Akshat Mittal" />
+						<img
+							loading="lazy"
+							data-aos="zoom-in"
+							src={akshat}
+							alt="Akshat Mittal"
+						/>
 					</div>
 				</div>
 				<div className="home-hero-dots">
 					<img src={dotsTriangle} alt="Home Dots" />
+				</div>
+			</section>
+			<section className="home-skills">
+				<div className="home-skills-head">
+					<h1 className="home-skills-head__h1">
+						{breakpoint("mobile")
+							? "My Skills"
+							: "Stuff that I work on"}
+					</h1>
+				</div>
+				<div className="home-skills-body">
+					<div
+						className="home-skills-container"
+						style={{ backgroundImage: `url(${people})` }}
+					>
+						<div className="home-skills-icons">
+							{skills.map((skill, index) => (
+								<span
+									className="home-skills-skill"
+									key={index}
+									data-title={skill.title}
+									data-aos="fade-right"
+								>
+									<img src={skill.icon} alt={skill.title} />
+								</span>
+							))}
+						</div>
+						<div className="home-skills-points">
+							<ul
+								className="home-skills-points-ul"
+								style={{ listStyle: `url(${bulb})` }}
+							>
+								{skillsPoints.map((point, index) => (
+									<li key={index}>{point}</li>
+								))}
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

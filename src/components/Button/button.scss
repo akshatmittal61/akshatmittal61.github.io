@@ -25,6 +25,10 @@ button {
 	&-sm {
 		padding: 0.5rem 1rem;
 	}
+	&-lg {
+		padding: 0.925rem 1.65rem;
+		font-size: 1.25rem;
+	}
 	&:hover {
 		box-shadow: var(--shadow-elevation-4dp);
 	}

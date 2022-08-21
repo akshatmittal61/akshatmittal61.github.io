@@ -24,6 +24,10 @@ button {
 .btn-sm {
   padding: 0.5rem 1rem;
 }
+.btn-lg {
+  padding: 0.925rem 1.65rem;
+  font-size: 1.25rem;
+}
 .btn:hover {
   box-shadow: var(--shadow-elevation-4dp);
 }

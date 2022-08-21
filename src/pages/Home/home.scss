@@ -2,7 +2,7 @@
 .home {
 	width: 100vw;
 	min-height: 100vh;
-	section {
+	& > section {
 		width: 100vw;
 		height: 100vh;
 		background-image: repeating-linear-gradient(
@@ -43,6 +43,7 @@
 			width: 8.75rem;
 			height: 8.75rem;
 			position: absolute;
+			z-index: -1;
 			bottom: 1.5rem;
 			left: 1.5rem;
 		}
@@ -98,15 +99,15 @@
 			&-text {
 				width: 60%;
 				height: 100%;
-				font-size: 1.5rem;
-				line-height: 2rem;
 				margin: 0.5rem 0;
 				display: flex;
 				justify-content: flex-start;
 				align-items: flex-start;
 				flex-flow: column;
-				span {
+				& > span {
 					margin: 0.5rem 0;
+					font-size: 1.5rem;
+					line-height: 2rem;
 				}
 				img {
 					object-fit: cover;
@@ -127,6 +128,62 @@
 					border-radius: 8px;
 					clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 95%);
 				}
+			}
+		}
+	}
+	&-skills {
+		display: flex;
+		flex-flow: column;
+		min-height: 100vh;
+		height: auto;
+		&-head {
+			font-size: 3.5rem;
+			line-height: 4rem;
+			margin: 3rem 2rem;
+		}
+		&-body {
+			width: 100%;
+			height: calc(100vh - 10rem);
+		}
+		&-container {
+			width: 100%;
+			height: 100%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position-x: center;
+			background-position-y: bottom;
+			margin: 0.65rem 0;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-flow: column;
+			padding: 2rem;
+			img {
+				object-fit: cover;
+				width: 48px;
+				height: 48px;
+			}
+		}
+		&-icons {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&-skill {
+			width: 4.5rem;
+			height: 4.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 1rem 0.5rem;
+		}
+		&-points {
+			width: 60%;
+			margin: 1rem auto;
+			font-size: 1.25rem;
+			line-height: 1.75rem;
+			li {
+				margin: 0.75rem 0;
 			}
 		}
 	}
