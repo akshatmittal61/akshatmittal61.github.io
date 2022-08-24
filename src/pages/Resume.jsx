@@ -3,14 +3,19 @@ import React from "react";
 const Resume = () => {
 	return (
 		<>
-			<object
-				data="https://drive.google.com/uc?export=view&id=1yKByRH6La0rOupNX3l29kcC-xue93m62"
-				type="application/pdf"
-				width={window.innerWidth}
-				height={window.innerHeight}
+			<iframe
+				src="https://drive.google.com/file/d/1yKByRH6La0rOupNX3l29kcC-xue93m62/preview"
+				style={{
+					position: "absolute",
+					left: 0,
+					top: 0,
+					width: "100%",
+					height: "100%",
+				}}
+				allow="autoplay"
+				title="Akshat Mittal Resume"
 				aria-label="Akshat Mittal Resume"
-				id="Akshat Mittal Resume"
-			></object>
+			></iframe>
 		</>
 	);
 };
