@@ -108,13 +108,23 @@ const Home = () => {
 							technologies arising in the world of web, android
 							and ML and many more.
 						</span>
-						<Button
-							text="Read More"
-							color="green"
-							icon="north_east"
-							size="large"
-							link="/about"
-						/>
+						<div className="home-about-btn">
+							<Button
+								text="Read More"
+								color="green"
+								icon="north_east"
+								size="large"
+								link="/about"
+							/>
+							<Button
+								text="Download Resume"
+								color="green"
+								icon="file_download"
+								size="large"
+								link="/resume"
+								variant="outline"
+							/>
+						</div>
 					</div>
 					<div className="home-about-body-image">
 						<img

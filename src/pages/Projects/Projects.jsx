@@ -27,6 +27,7 @@ const Projects = () => {
 	};
 	useEffect(() => {
 		const loadData = async () => {
+			setProjects([]);
 			projectNames.forEach((project) => {
 				fetchDataForRepo(project).then((res) => {
 					setProjects((prev) => [...prev, res]);

@@ -42,7 +42,8 @@ const App = () => {
 					/>
 				))}
 			</Routes>
-			<Footer />
+			{location.pathname !== "/resume" &&
+				location.pathname !== "/contact" && <Footer />}
 		</>
 	);
 };

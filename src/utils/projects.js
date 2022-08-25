@@ -1,7 +1,7 @@
 import plannerIcon from "../images/projects/planner.svg";
 import expensesTrackerIcon from "../images/projects/expenses-tracker.svg";
 import whackAMoleIcon from "../images/projects/whack-a-mole.png";
-import messManagementIcon from "../images/projects/mess-management.png";
+import forceIcon from "../images/projects/force.png";
 import techtatvaIcon from "../images/projects/techtatva.png";
 import screenRecorderIcon from "../images/projects/screen-recorder.png";
 import srmIcon from "../images/projects/srm.png";
@@ -29,11 +29,11 @@ const projects = [
 		tools: ["HTML", "CSS", "JavaScript"],
 	},
 	{
-		title: "mess-management",
-		icon: messManagementIcon,
+		title: "force-iiitu",
+		icon: forceIcon,
 		color: "brown",
 		owner: "akshatmittal61",
-		tools: ["React.js", "Node.js", "Express.js", "MySQL", "MUI"],
+		tools: ["React.js", "Node.js", "CSS", "SASS"],
 	},
 	{
 		title: "techtatva",

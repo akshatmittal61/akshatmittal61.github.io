@@ -81,5 +81,11 @@
 				margin: 0.75rem 0;
 			}
 		}
+		&-resume {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 }
