@@ -7,14 +7,17 @@ import akshat from "../../images/Akshat_Transparent.png";
 import "./home.css";
 import Button from "../../components/Button/Button";
 import GlobalContext from "../../Context/GlobalContext";
-import skills from "../../utils/skills";
+import skills, { skillsMap } from "../../utils/skills";
 import bulb from "../../images/bulb_on.svg";
 import axios from "axios";
 import { default as projectNames } from "../../utils/projects.js";
 import Row, { Col } from "../../Layout/Responsive";
+import { FiGithub, FiLink } from "react-icons/fi";
+import Chip from "../../components/Chip/Chip";
+import _ from "lodash";
 
 const Home = () => {
-	const { breakpoint } = useContext(GlobalContext);
+	const { theme, breakpoint } = useContext(GlobalContext);
 	const [projects, setProjects] = useState([]);
 	const fetchDataForRepo = async (repo) => {
 		let response = await axios(
@@ -167,11 +170,109 @@ const Home = () => {
 				</div>
 			</section>
 			<section className="home-projects">
-				<h1 className="home-projects-head">My Projects</h1>
+				<div className="home-projects-head">
+					<h1 className="home-projects-head__h1">My Projects</h1>
+				</div>
 				<div className="home-projects-body">
 					<Row>
 						{projects.map((project, id) => (
 							<Col lg={50} md={50} sm={100} key={id}>
+								<div className="home-projects-project home-project">
+									<div
+										className="home-project-front"
+										style={{
+											backgroundColor: `var(--${
+												project.color
+											}-${
+												theme === "light" ? 100 : 700
+											})`,
+										}}
+									>
+										<div className="home-project-front-box">
+											<div
+												className="home-project-front__icon"
+												style={{
+													backgroundImage: `url(${project.icon})`,
+												}}
+											></div>
+											<span className="home-project-front__title">
+												{_.startCase(project.title)}
+											</span>
+										</div>
+									</div>
+									<div
+										className="home-project-back"
+										style={{
+											backgroundColor: `var(--${
+												project.color
+											}-${
+												theme === "light" ? 100 : 700
+											})`,
+										}}
+									>
+										<div className="home-project-back-box">
+											<div className="home-project-icon">
+												<img
+													src={project.icon}
+													alt={project.title}
+												/>
+											</div>
+											<span className="home-project-title">
+												{_.startCase(project.title)}
+											</span>
+											<a
+												href={project.deployment}
+												className="home-project-link"
+												target="_blank"
+												rel="noreferrer"
+											>
+												<FiLink />
+												{project.deployment.slice(
+													8,
+													project.deployment.length
+												)}
+											</a>
+											<a
+												href={project.githubLink}
+												className="home-project-github"
+												target="_blank"
+												rel="noreferrer"
+											>
+												<FiGithub />
+												{project.repo_name}
+											</a>
+											<span className="home-project-about">
+												{project.about}
+											</span>
+											<div className="home-project-tools">
+												{project.tools.map(
+													(tool, index) => (
+														<span
+															key={index}
+															data-title={tool}
+														>
+															<img
+																src={skillsMap.get(
+																	tool
+																)}
+																alt={tool}
+															/>
+														</span>
+													)
+												)}
+											</div>
+											<div className="home-project-tags">
+												{project.tags.map(
+													(tag, index) => (
+														<Chip key={index}>
+															{tag}
+														</Chip>
+													)
+												)}
+											</div>
+										</div>
+									</div>
+								</div>
 							</Col>
 						))}
 					</Row>
