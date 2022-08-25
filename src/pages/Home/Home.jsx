@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import dotsTriangle from "../../images/dots-triangle.svg";
 import socials from "../../utils/socials";
 import wave from "../../images/wave.gif";
@@ -9,9 +9,43 @@ import Button from "../../components/Button/Button";
 import GlobalContext from "../../Context/GlobalContext";
 import skills from "../../utils/skills";
 import bulb from "../../images/bulb_on.svg";
+import axios from "axios";
+import { default as projectNames } from "../../utils/projects.js";
+import Row, { Col } from "../../Layout/Responsive";
 
 const Home = () => {
 	const { breakpoint } = useContext(GlobalContext);
+	const [projects, setProjects] = useState([]);
+	const fetchDataForRepo = async (repo) => {
+		let response = await axios(
+			`https://api.github.com/repos/${repo.owner}/${repo.title}`
+		);
+		const { name, description, full_name, html_url, homepage, topics } =
+			response.data;
+		const projectData = {
+			title: name,
+			about: description,
+			repo_name: full_name,
+			githubLink: html_url,
+			deployment: homepage,
+			tags: [...topics],
+			icon: repo.icon,
+			tools: repo.tools,
+			color: repo.color,
+		};
+		return projectData;
+	};
+	useEffect(() => {
+		const loadData = async () => {
+			projectNames.forEach((project) => {
+				if (project.title === "planner" || project.title === "srm")
+					fetchDataForRepo(project).then((res) => {
+						setProjects((prev) => [...prev, res]);
+					});
+			});
+		};
+		loadData();
+	}, []);
 	const skillsPoints = [
 		"Refined Code writing, Smoother operations",
 		"Develop highly interactive and user engaging interfaces for web applications",
@@ -130,6 +164,17 @@ const Home = () => {
 							))}
 						</div>
 					</div>
+				</div>
+			</section>
+			<section className="home-projects">
+				<h1 className="home-projects-head">My Projects</h1>
+				<div className="home-projects-body">
+					<Row>
+						{projects.map((project, id) => (
+							<Col lg={50} md={50} sm={100} key={id}>
+							</Col>
+						))}
+					</Row>
 				</div>
 			</section>
 		</main>
