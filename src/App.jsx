@@ -17,6 +17,9 @@ const App = () => {
 	useEffect(() => {
 		setOpenNavBar(false);
 	}, [location.pathname, setOpenNavBar]);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location.pathname]);
 	return (
 		<>
 			{!breakpoint("mobile") && location.pathname !== "/resume" && (

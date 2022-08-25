@@ -198,76 +198,80 @@
   }
 }
 .project {
-  width: 22.5rem;
-  height: 22.5rem;
-  overflow: hidden;
-  box-shadow: var(--shadow-elevation-2dp);
-  border-radius: 8px;
-  margin: 1rem;
+  width: 23rem;
+  height: 30rem;
+  display: flex;
   position: relative;
+  perspective: 150rem;
+  margin: 1rem 0;
 }
-@media (max-width: 672px) {
-  .project {
-    height: auto;
-  }
+.project * {
+  transition: all 1s ease-in-out;
 }
-.project-front {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-@media (max-width: 672px) {
-  .project-front {
-    display: none;
-  }
-}
-.project-back {
+.project-front, .project-back {
   width: 100%;
   height: 100%;
   position: absolute;
-  overflow-x: hidden;
-  overflow-y: auto;
-  top: 100%;
+  top: 0;
   left: 0;
-  background-color: var(--bgcolor);
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: column;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: var(--shadow-elevation-2dp);
   padding: 1rem;
 }
+.project-front {
+  transform: rotateY(0deg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+}
+.project-front__icon {
+  width: 100%;
+  height: 16rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.project-front__title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.project-back {
+  transform: rotateY(180deg);
+}
+.project-back-box > * {
+  margin: 0.5rem 0;
+}
+.project:hover .project-front {
+  transform: rotateY(-180deg);
+}
+.project:hover .project-back {
+  transform: rotateY(0deg);
+}
 @media (max-width: 672px) {
-  .project-back {
+  .project {
     position: static;
     top: 0;
   }
 }
-.project-back::-webkit-scrollbar {
+.project::-webkit-scrollbar {
   width: 0px;
   background-color: transparent;
 }
-.project-back::-webkit-scrollbar-track {
+.project::-webkit-scrollbar-track {
   background-color: transparent;
 }
-.project-back::-webkit-scrollbar-thumb {
+.project::-webkit-scrollbar-thumb {
   background-color: transparent;
   border-radius: 500px;
 }
-.project-back::-webkit-scrollbar-thumb:hover {
+.project::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
 }
-.project-back::-webkit-scrollbar-thumb:hover {
+.project::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
-}
-.project-back > * {
-  margin: 0.25rem 0;
-}
-.project:hover {
-  box-shadow: var(--shadow-elevation-4dp);
-}
-.project:hover .project-back {
-  top: 0;
 }
 .project-icon {
   width: 5rem;
