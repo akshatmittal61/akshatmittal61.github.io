@@ -9,6 +9,7 @@ import NavButton from "./components/Navigation/NavButton";
 import Cursor from "./Layout/Cursor/Cursor";
 import Theme from "./Layout/Theme/Theme";
 import { mappedRoutes } from "./routes";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
 	AOS.init();
@@ -41,6 +42,7 @@ const App = () => {
 					/>
 				))}
 			</Routes>
+			<Footer />
 		</>
 	);
 };

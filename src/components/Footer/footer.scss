@@ -1,0 +1,85 @@
+@import "../../config";
+.footer {
+	width: 100%;
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: bottom;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	&-connect {
+		width: 75%;
+		margin: 1rem auto;
+		&-head {
+			width: fit-content;
+			height: 11rem;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-flow: column;
+			font-size: 2.75rem;
+			line-height: 3.5rem;
+			font-weight: 100;
+			font-weight: lighter;
+			padding: 1.5rem 2rem;
+			@include respond(tab) {
+				height: 5rem;
+				flex-flow: row;
+			}
+			span {
+				--color: var(--red);
+				--index: 2;
+				color: var(--color);
+				position: relative;
+				clip-path: inset(0 0);
+				animation-name: text-reveal;
+				animation-duration: 1s;
+				animation-delay: calc(var(--index) * 0.25s);
+				animation-fill-mode: both;
+				animation-timing-function: steps(1);
+				&::selection {
+					background-color: var(--red);
+					color: var(--bgcolor);
+				}
+				&:nth-of-type(1) {
+					--color: var(--green);
+					--index: 0;
+					&::selection {
+						background-color: var(--green);
+					}
+				}
+				&:nth-of-type(2) {
+					--color: var(--yellow);
+					--index: 1;
+					&::selection {
+						background-color: var(--yellow);
+					}
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					inset: 0 0;
+					background-color: var(--color);
+					animation-name: block-reveal;
+					animation-duration: 1s;
+					animation-fill-mode: both;
+					animation-delay: calc(var(--index) * 0.25s);
+				}
+				@include respond(tab) {
+					margin-right: 0.5rem;
+				}
+			}
+		}
+		&-form {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-flow: column;
+			.form-group {
+				margin: 0.75rem 0;
+			}
+		}
+	}
+}
