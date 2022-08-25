@@ -154,9 +154,9 @@
 			background-position-y: bottom;
 			margin: 0.65rem 0;
 			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-			flex-flow: column;
+			justify-content: center;
+			align-items: flex-start;
+			// flex-flow: column;
 			padding: 2rem;
 			img {
 				object-fit: cover;
@@ -165,7 +165,7 @@
 			}
 		}
 		&-icons {
-			width: 100%;
+			width: 40%;
 			display: flex;
 			flex-wrap: wrap;
 		}
@@ -179,7 +179,9 @@
 		}
 		&-points {
 			width: 60%;
+			height: 100%;
 			margin: 1rem auto;
+			padding: 0 2.5rem;
 			font-size: 1.25rem;
 			line-height: 1.75rem;
 			li {

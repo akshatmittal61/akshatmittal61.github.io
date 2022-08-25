@@ -107,6 +107,16 @@ const Home = () => {
 						className="home-skills-container"
 						style={{ backgroundImage: `url(${people})` }}
 					>
+						<div className="home-skills-points">
+							<ul
+								className="home-skills-points-ul"
+								style={{ listStyle: `url(${bulb})` }}
+							>
+								{skillsPoints.map((point, index) => (
+									<li key={index}>{point}</li>
+								))}
+							</ul>
+						</div>
 						<div className="home-skills-icons">
 							{skills.map((skill, index) => (
 								<span
@@ -118,16 +128,6 @@ const Home = () => {
 									<img src={skill.icon} alt={skill.title} />
 								</span>
 							))}
-						</div>
-						<div className="home-skills-points">
-							<ul
-								className="home-skills-points-ul"
-								style={{ listStyle: `url(${bulb})` }}
-							>
-								{skillsPoints.map((point, index) => (
-									<li key={index}>{point}</li>
-								))}
-							</ul>
 						</div>
 					</div>
 				</div>
