@@ -57,7 +57,7 @@
   transform: rotate(-45deg);
 }
 .navigation-cover {
-  width: calc(100vw - var(--side-width));
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -70,7 +70,8 @@
 }
 @media (max-width: 672px) {
   .navigation-aside {
-    right: 0;
+    width: 90vw;
+    right: 5vw;
   }
 }
 
@@ -80,6 +81,12 @@
   height: calc(100vh - var(--head-height) - 5vh);
   background-color: var(--bgcolor);
   border-radius: 32px;
+}
+@media (max-width: 672px) {
+  .aside {
+    width: 90vw;
+    right: 5vw;
+  }
 }
 .aside-nav {
   width: 100%;

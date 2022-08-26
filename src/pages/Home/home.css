@@ -10,6 +10,11 @@
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 672px) {
+  .home > section {
+    height: auto;
+  }
+}
 .home .outline {
   font-family: var(--font-helvetica-outline);
   font-weight: 400;
@@ -26,6 +31,13 @@
   margin: 0 auto;
   font-size: 4rem;
   line-height: 6rem;
+}
+@media (max-width: 672px) {
+  .home-hero-text {
+    font-size: 2.5rem;
+    line-height: 5rem;
+    transform: translateY(-5rem) !important;
+  }
 }
 .home-hero-text h1 {
   margin: 2rem 0;
@@ -47,7 +59,7 @@
   position: fixed;
   bottom: 0;
   z-index: 2;
-  right: 4rem;
+  right: 2rem;
   transform: translateY(-50%);
   display: flex;
   flex-flow: column;
@@ -93,6 +105,12 @@
   align-items: center;
   padding: 0 2rem 1rem 2rem;
 }
+@media (max-width: 672px) {
+  .home-about-body {
+    height: auto;
+    flex-flow: column-reverse;
+  }
+}
 .home-about-body-text {
   width: 60%;
   height: 100%;
@@ -111,6 +129,12 @@
   object-fit: cover;
   width: 2.25rem;
   height: 2.25rem;
+}
+@media (max-width: 672px) {
+  .home-about-body-text {
+    width: 100%;
+    padding-right: 2rem;
+  }
 }
 .home-about-body-image {
   width: 40%;
@@ -141,6 +165,11 @@
   width: 100%;
   height: calc(100vh - 10rem);
 }
+@media (max-width: 672px) {
+  .home-skills-body {
+    height: auto;
+  }
+}
 .home-skills-container {
   width: 100%;
   height: 100%;
@@ -154,6 +183,12 @@
   align-items: flex-start;
   padding: 2rem;
 }
+@media (max-width: 672px) {
+  .home-skills-container {
+    height: auto;
+    flex-flow: column-reverse;
+  }
+}
 .home-skills-container img {
   object-fit: cover;
   width: 48px;
@@ -163,6 +198,11 @@
   width: 40%;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 672px) {
+  .home-skills-icons {
+    width: 100%;
+  }
 }
 .home-skills-skill {
   width: 4.5rem;
@@ -183,6 +223,11 @@
 .home-skills-points li {
   margin: 0.75rem 0;
 }
+@media (max-width: 672px) {
+  .home-skills-points {
+    width: 100%;
+  }
+}
 .home-projects {
   display: flex;
   flex-flow: column;
@@ -191,12 +236,17 @@
 }
 .home-projects-head {
   font-size: 3.5rem;
-  line-height: 4rem;
+  line-height: 5rem;
   margin: 3rem 2rem;
 }
 .home-projects-body {
   width: 100%;
   height: calc(100vh - 10rem);
+}
+@media (max-width: 672px) {
+  .home-projects-body {
+    height: auto;
+  }
 }
 .home-projects-btn {
   width: 75%;
@@ -205,6 +255,11 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+@media (max-width: 672px) {
+  .home-projects-btn {
+    height: 15rem;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -65,8 +65,8 @@ $colors: "blue", "red", "yellow", "green", "white", "black", "purple", "indigo",
 		height: calc(100% - 11rem);
 		overflow: hidden;
 		@include respond(tab) {
-		height: calc(100% - 5rem);
-		flex-flow: column;
+			height: calc(100% - 5rem);
+			flex-flow: column;
 		}
 	}
 	&-form {
@@ -123,7 +123,11 @@ $colors: "blue", "red", "yellow", "green", "white", "black", "purple", "indigo",
 			border-radius: 50%;
 			transition: none;
 			cursor: pointer;
-			@include respond(tab){
+			@include respond(tab) {
+				margin: 0.75rem 1.25rem;
+			}
+			@include respond(phone) {
+				--size: 42px;
 				margin: 0.75rem 1.25rem;
 			}
 			svg {
@@ -157,7 +161,7 @@ $colors: "blue", "red", "yellow", "green", "white", "black", "purple", "indigo",
 		justify-content: center;
 		align-items: center;
 		margin: 3rem 0;
-		@include respond(tab){
+		@include respond(tab) {
 			margin: 0.5rem 0;
 		}
 	}

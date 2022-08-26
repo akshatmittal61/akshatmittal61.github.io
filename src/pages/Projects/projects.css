@@ -227,6 +227,11 @@
   flex-flow: column;
   text-align: center;
 }
+@media (max-width: 672px) {
+  .project-front {
+    transform: rotateY(-180deg);
+  }
+}
 .project-front__icon {
   width: 100%;
   height: 16rem;
@@ -240,6 +245,14 @@
 }
 .project-back {
   transform: rotateY(180deg);
+}
+@media (max-width: 672px) {
+  .project-back {
+    transform: rotateY(0deg);
+  }
+}
+.project-back-box {
+  text-align: left;
 }
 .project-back-box > * {
   margin: 0.5rem 0;

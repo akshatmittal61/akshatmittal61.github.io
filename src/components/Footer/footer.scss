@@ -9,9 +9,20 @@
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+    @include respond(tab){
+        height: auto;
+        padding: 5rem 0;
+    }
+    @include respond(phone){
+        height: auto;
+        padding: 5rem 0;
+    }
 	&-connect {
 		width: 75%;
 		margin: 1rem auto;
+        @include respond(phone){
+            width: 85%;
+        }
 		&-head {
 			width: fit-content;
 			height: 11rem;

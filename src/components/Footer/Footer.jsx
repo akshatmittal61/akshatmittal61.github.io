@@ -108,6 +108,7 @@ const Footer = () => {
 						variant="outline"
 						icon="file_download"
 						size="large"
+						link="/resume"
 					/>
 				</div>
 			</div>

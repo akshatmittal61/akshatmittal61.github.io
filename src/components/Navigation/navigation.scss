@@ -58,7 +58,7 @@
 		}
 	}
 	&-cover {
-		width: calc(100vw - var(--side-width));
+		width: 100vw;
 		height: 100vh;
 		position: fixed;
 		top: 0;
@@ -68,8 +68,9 @@
 		position: fixed;
 		top: calc(var(--head-height) + 2.5vh);
 		right: 2rem;
-		@include respond(phone){
-			right: 0;
+		@include respond(phone) {
+			width: 90vw;
+			right: 5vw;
 		}
 	}
 }
@@ -79,6 +80,10 @@
 	height: calc(100vh - var(--head-height) - 5vh);
 	background-color: var(--bgcolor);
 	border-radius: 32px;
+	@include respond(phone) {
+		width: 90vw;
+		right: 5vw;
+	}
 	&-nav {
 		width: 100%;
 		margin: 1rem 0;

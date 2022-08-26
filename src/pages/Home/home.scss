@@ -15,6 +15,9 @@
 		background-size: 275px 275px;
 		position: relative;
 		overflow: hidden;
+		@include respond(phone) {
+			height: auto;
+		}
 	}
 	.outline {
 		font-family: var(--font-helvetica-outline);
@@ -31,6 +34,11 @@
 			margin: 0 auto;
 			font-size: 4rem;
 			line-height: 6rem;
+			@include respond(phone) {
+				font-size: 2.5rem;
+				line-height: 5rem;
+				transform: translateY(-5rem) !important;
+			}
 			h1 {
 				margin: 2rem 0;
 				img {
@@ -52,7 +60,7 @@
 			position: fixed;
 			bottom: 0;
 			z-index: 2;
-			right: 4rem;
+			right: 2rem;
 			transform: translateY(-50%);
 			display: flex;
 			flex-flow: column;
@@ -97,6 +105,10 @@
 			justify-content: space-around;
 			align-items: center;
 			padding: 0 2rem 1rem 2rem;
+			@include respond(phone) {
+				height: auto;
+				flex-flow: column-reverse;
+			}
 			&-text {
 				width: 60%;
 				height: 100%;
@@ -114,6 +126,10 @@
 					object-fit: cover;
 					width: 2.25rem;
 					height: 2.25rem;
+				}
+				@include respond(phone) {
+					width: 100%;
+					padding-right: 2rem;
 				}
 			}
 			&-image {
@@ -145,6 +161,9 @@
 		&-body {
 			width: 100%;
 			height: calc(100vh - 10rem);
+			@include respond(phone) {
+				height: auto;
+			}
 		}
 		&-container {
 			width: 100%;
@@ -158,6 +177,10 @@
 			justify-content: center;
 			align-items: flex-start;
 			padding: 2rem;
+			@include respond(phone) {
+				height: auto;
+				flex-flow: column-reverse;
+			}
 			img {
 				object-fit: cover;
 				width: 48px;
@@ -168,6 +191,9 @@
 			width: 40%;
 			display: flex;
 			flex-wrap: wrap;
+			@include respond(phone) {
+				width: 100%;
+			}
 		}
 		&-skill {
 			width: 4.5rem;
@@ -187,6 +213,9 @@
 			li {
 				margin: 0.75rem 0;
 			}
+			@include respond(phone) {
+				width: 100%;
+			}
 		}
 	}
 	&-projects {
@@ -196,12 +225,15 @@
 		height: auto;
 		&-head {
 			font-size: 3.5rem;
-			line-height: 4rem;
+			line-height: 5rem;
 			margin: 3rem 2rem;
 		}
 		&-body {
 			width: 100%;
 			height: calc(100vh - 10rem);
+			@include respond(phone) {
+				height: auto;
+			}
 		}
 		&-btn {
 			width: 75%;
@@ -210,6 +242,9 @@
 			justify-content: center;
 			align-items: center;
 			flex-flow: column;
+			@include respond(phone) {
+				height: 15rem;
+			}
 		}
 	}
 }

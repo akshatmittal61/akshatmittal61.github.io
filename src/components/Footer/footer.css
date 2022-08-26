@@ -9,9 +9,26 @@
   justify-content: center;
   align-items: flex-start;
 }
+@media (max-width: 880px) {
+  .footer {
+    height: auto;
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 672px) {
+  .footer {
+    height: auto;
+    padding: 5rem 0;
+  }
+}
 .footer-connect {
   width: 75%;
   margin: 1rem auto;
+}
+@media (max-width: 672px) {
+  .footer-connect {
+    width: 85%;
+  }
 }
 .footer-connect-head {
   width: fit-content;

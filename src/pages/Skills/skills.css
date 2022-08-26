@@ -84,6 +84,12 @@
   width: 48px;
   height: 48px;
 }
+@media (max-width: 672px) {
+  .skills-body-icons img {
+    width: 36px;
+    height: 36px;
+  }
+}
 .skills-body-text {
   font-size: 1.125rem;
   line-height: 1.5rem;

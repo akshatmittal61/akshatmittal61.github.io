@@ -144,6 +144,12 @@
     margin: 0.75rem 1.25rem;
   }
 }
+@media (max-width: 672px) {
+  .contact-socials li {
+    --size: 42px;
+    margin: 0.75rem 1.25rem;
+  }
+}
 .contact-socials li svg {
   z-index: 5;
   transition: color 0.05s ease-in-out;

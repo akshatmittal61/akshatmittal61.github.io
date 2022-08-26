@@ -12,6 +12,7 @@ import axios from "axios";
 import { default as projectNames } from "../../utils/projects.js";
 import Row, { Col } from "../../Layout/Responsive";
 import Project from "../Projects/Project";
+import Typing from "../../components/Typing/Typing";
 
 const Home = () => {
 	const { breakpoint } = useContext(GlobalContext);
@@ -56,13 +57,20 @@ const Home = () => {
 	];
 	return (
 		<main className="home">
-			<section className="home-hero">
+			<section className="home-hero" style={{ height: "100vh" }}>
 				<div className="home-hero-text" data-aos="fade-right">
 					<h1>
 						Hey There ! <img src={wave} alt="Wave" />
 					</h1>
 					<h1>
-						I am <span className="outline">Akshat Mittal</span>
+						I am{" "}
+						<span className="outline">
+							{breakpoint("mobile") ? (
+								<>Akshat Mittal</>
+							) : (
+								<Typing>Akshat Mittal</Typing>
+							)}
+						</span>
 					</h1>
 				</div>
 				<div className="home-hero-dots">
@@ -135,9 +143,11 @@ const Home = () => {
 						/>
 					</div>
 				</div>
-				<div className="home-hero-dots">
-					<img src={dotsTriangle} alt="Home Dots" />
-				</div>
+				{!breakpoint("mobile") && (
+					<div className="home-hero-dots">
+						<img src={dotsTriangle} alt="Home Dots" />
+					</div>
+				)}
 			</section>
 			<section className="home-skills">
 				<div className="home-skills-head">

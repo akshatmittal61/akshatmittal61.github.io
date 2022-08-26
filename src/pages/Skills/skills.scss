@@ -75,6 +75,10 @@
 				object-fit: cover;
 				width: 48px;
 				height: 48px;
+				@include respond(phone) {
+					width: 36px;
+					height: 36px;
+				}
 			}
 		}
 		&-text {
