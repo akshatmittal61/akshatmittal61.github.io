@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f69cb98.css",
-    "main.js": "/static/js/main.1e1c2929.js",
+    "main.css": "/static/css/main.60546c0b.css",
+    "main.js": "/static/js/main.a49e0c1c.js",
     "static/media/Choco-cooky.svg": "/static/media/Choco-cooky.c87c7c168cbac80cf36a.svg",
     "static/media/Choco-cooky.eot": "/static/media/Choco-cooky.e4b63a67a1ef0196b233.eot",
     "static/media/Choco-cooky.ttf": "/static/media/Choco-cooky.2afc35ea88e98eb2f37d.ttf",
@@ -16,6 +16,7 @@
     "static/media/srm.png": "/static/media/srm.0887c89f38ca1180bcdc.png",
     "static/media/wave.gif": "/static/media/wave.d93720933c608f6178fb.gif",
     "static/media/Akshat_Transparent.png": "/static/media/Akshat_Transparent.e7fdee6cb80a508826e5.png",
+    "static/media/stakeeasy.png": "/static/media/stakeeasy.846ff3f266459bb027d9.png",
     "static/media/Helvetica-Outline.ttf": "/static/media/Helvetica-Outline.5de9867ce84cf2d05cbb.ttf",
     "static/media/GoogleSans-Regular.eot": "/static/media/GoogleSans-Regular.1e9a2f618a7990cfee96.eot",
     "static/media/GoogleSans-Regular.ttf": "/static/media/GoogleSans-Regular.6c1be5cadff6ad16ad5f.ttf",
@@ -43,14 +44,16 @@
     "static/media/screen-recorder.png": "/static/media/screen-recorder.d80961927bca021a03b6.png",
     "static/media/developer_activity.svg": "/static/media/developer_activity.6497e52cc313e6de2edf37cf269350be.svg",
     "static/media/techtatva.png": "/static/media/techtatva.f2785ed600384f8a7ca8.png",
+    "static/media/techsnap.png": "/static/media/techsnap.b90db74f490f9b57de74.png",
     "static/media/bulb_on.svg": "/static/media/bulb_on.a4999a730586c54bacdb7eec341cd54f.svg",
     "static/media/eunoia.jpeg": "/static/media/eunoia.a79c34d92b948facbc5f.jpeg",
-    "static/media/expenses-tracker.svg": "/static/media/expenses-tracker.9c5c518f2223d67bb1f9c17e589fd897.svg",
     "static/media/mysql.svg": "/static/media/mysql.0634860bdd43b50343d4d2d00c4b2ccc.svg",
     "static/media/sass.svg": "/static/media/sass.8bc32fe1b3fc5c549d6edf218729e20a.svg",
     "static/media/git.svg": "/static/media/git.2231ab474a49d68c30848552a22213bc.svg",
     "static/media/illustration_404.svg": "/static/media/illustration_404.62e062ffb1aa9a40611965004c50973a.svg",
+    "static/media/school.svg": "/static/media/school.51558b96b47ae6c0011c751bdf9d7fec.svg",
     "static/media/react.svg": "/static/media/react.d20b483b101b8cfece0293e327d3b11e.svg",
+    "static/media/flavorsome.svg": "/static/media/flavorsome.85cf1458e22b806cb3aefe94f9d00982.svg",
     "index.html": "/index.html",
     "static/media/dots-triangle.svg": "/static/media/dots-triangle.37ebffa86fb2ac48900a3385b00e69c3.svg",
     "static/media/cpp.svg": "/static/media/cpp.63e75093d6a95b40e40861d9815a7c6a.svg",
@@ -61,14 +64,15 @@
     "static/media/js.svg": "/static/media/js.45687a3d83053bd27bac35627e904d53.svg",
     "static/media/mui.svg": "/static/media/mui.456bfb02539777f812137c514d397868.svg",
     "static/media/express.svg": "/static/media/express.c93a129775eb0e0a1530201dfd9ee31e.svg",
+    "static/media/graduation-cap.svg": "/static/media/graduation-cap.2764c511d888407955605efc4178a279.svg",
     "static/media/html.svg": "/static/media/html.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "static/media/planner.svg": "/static/media/planner.21888eb69f3827aec73189361eab4a9b.svg",
     "static/media/css.svg": "/static/media/css.6045a956c85c6758770aabce7f015c9b.svg",
-    "main.7f69cb98.css.map": "/static/css/main.7f69cb98.css.map",
-    "main.1e1c2929.js.map": "/static/js/main.1e1c2929.js.map"
+    "main.60546c0b.css.map": "/static/css/main.60546c0b.css.map",
+    "main.a49e0c1c.js.map": "/static/js/main.a49e0c1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f69cb98.css",
-    "static/js/main.1e1c2929.js"
+    "static/css/main.60546c0b.css",
+    "static/js/main.a49e0c1c.js"
   ]
 }
