@@ -11,8 +11,8 @@ import bulb from "../../images/bulb_on.svg";
 import axios from "axios";
 import { default as projectNames } from "../../utils/projects.js";
 import Row, { Col } from "../../Layout/Responsive";
-import Typing from "../../components/Typing/Typing";
 import Project from "../../components/Project/Project";
+import Typing from "../../Layout/Typing/Typing";
 
 const Home = () => {
 	const { breakpoint } = useContext(GlobalContext);
