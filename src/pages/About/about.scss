@@ -1,4 +1,5 @@
 @import "../../responsive";
+
 .about {
 	width: 100vw;
 	min-height: 100vh;
@@ -7,34 +8,42 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	padding: 2.5rem 4rem;
+
 	&-head {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		img{
+
+		img {
 			object-fit: cover;
 			max-width: 100%;
 			max-height: 100%;
 			border-radius: 10%;
 		}
+
 		&__h2 {
 			font-size: 4rem;
 			line-height: 4.5rem;
 		}
+
 		&__h3 {
 			font-size: 3rem;
 			line-height: 3.5rem;
 		}
 	}
+
 	&-body {
+		width: 100%;
 		margin: 1.25rem 0;
+
 		&__p {
 			font-size: 1.5rem;
 			line-height: 2rem;
 			margin: 0.5rem 0;
 			display: flex;
 			flex-flow: column;
+
 			img {
 				object-fit: cover;
 				width: 2.25rem;
@@ -43,4 +52,6 @@
 		}
 	}
 }
+
 @import "./community";
+@import "./education";

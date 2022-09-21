@@ -4,6 +4,8 @@ import wave from "../../images/wave.gif";
 import Community from "./Community";
 import communitites from "../../utils/communities";
 import me from "../../images/Akshat_Transparent.png";
+import education from "../../utils/education";
+import Education from "./Education";
 
 const About = () => {
 	return (
@@ -19,8 +21,8 @@ const About = () => {
 					</p>
 					<p className="about-body__p">
 						<span>
-							I'm Akshat Mittal an aspiring MERN stack developer
-							and an Open Source Enthusiast.
+							I'm Akshat Mittal a MERN stack developer, a
+							freelancer and an Open Source Enthusiast.
 						</span>
 					</p>
 					<p className="about-body__p">
@@ -59,6 +61,16 @@ const About = () => {
 							</div>
 						))}
 					</div>
+				</div>
+			</div>
+			<div className="about-head">
+				<h3 className="about-head__h3">Education</h3>
+			</div>
+			<div className="about-body">
+				<div className="about-body__p">
+					{education.map((edu, id) => (
+						<Education key={id} {...edu} />
+					))}
 				</div>
 			</div>
 		</main>

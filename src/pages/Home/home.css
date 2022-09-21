@@ -8,7 +8,6 @@
   background-image: repeating-linear-gradient(to right, var(--back-shadow-dark), var(--back-shadow-dark) 1px, transparent 1px, transparent);
   background-size: 275px 275px;
   position: relative;
-  overflow: hidden;
 }
 @media (max-width: 672px) {
   .home > section {

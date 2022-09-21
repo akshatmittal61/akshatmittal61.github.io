@@ -186,6 +186,7 @@
   line-height: 3.5rem;
 }
 .about-body {
+  width: 100%;
   margin: 1.25rem 0;
 }
 .about-body__p {
@@ -285,6 +286,54 @@
   margin-right: 0.5rem;
   padding: 0.25rem 0.75rem;
   font-size: 1.1rem;
+}
+
+.education {
+  width: 100%;
+  height: 20rem;
+  box-shadow: var(--shadow-elevation-2dp);
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--brown-100);
+  border-radius: 8px;
+}
+body.dark .education {
+  background-color: var(--brown);
+}
+.education-left {
+  width: 35%;
+  height: 90%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.education-right {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+}
+.education-right > * {
+  margin: 0.75rem 0;
+}
+.education-right h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.education-right h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: var(--tcolor-100);
+}
+.education-right p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 /*# sourceMappingURL=about.css.map */

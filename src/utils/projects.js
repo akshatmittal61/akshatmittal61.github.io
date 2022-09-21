@@ -1,5 +1,5 @@
 import plannerIcon from "../images/projects/planner.svg";
-import expensesTrackerIcon from "../images/projects/expenses-tracker.svg";
+import flavorsomeIcon from "../images/projects/flavorsome.svg";
 import whackAMoleIcon from "../images/projects/whack-a-mole.png";
 import forceIcon from "../images/projects/force.png";
 import techtatvaIcon from "../images/projects/techtatva.png";
@@ -12,14 +12,14 @@ const projects = [
 		icon: plannerIcon,
 		color: "indigo",
 		owner: "akshatmittal61",
-		tools: ["React.js", "Node.js", "Express.js", "Mongo DB", "CSS"],
+		tools: ["React.js", "Node.js", "Express.js", "Mongo DB", "SASS"],
 	},
 	{
-		title: "expenses-tracker",
-		icon: expensesTrackerIcon,
+		title: "flavorsome",
+		icon: flavorsomeIcon,
 		color: "green",
 		owner: "akshatmittal61",
-		tools: ["React.js", "Node.js", "Express.js", "Mongo DB", "CSS"],
+		tools: ["React.js", "Node.js", "Express.js", "Mongo DB", "SASS"],
 	},
 	{
 		title: "Whack-A-Mole",
