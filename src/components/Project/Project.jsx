@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import _ from "lodash";
 import { FiGithub, FiLink } from "react-icons/fi";
 import { skillsMap } from "../../utils/skills";
-import Chip from "../../components/Chip/Chip";
+import Chip from "../Chip/Chip";
 import GlobalContext from "../../Context/GlobalContext";
+import "./project.css";
 
 const Project = ({
 	title,
@@ -51,9 +52,7 @@ const Project = ({
 					<div className="project-icon">
 						<img src={icon} alt={title} />
 					</div>
-					<span className="project-title">
-						{_.startCase(title)}
-					</span>
+					<span className="project-title">{_.startCase(title)}</span>
 					<a
 						href={deployment}
 						className="project-link"
@@ -89,58 +88,6 @@ const Project = ({
 			</div>
 		</div>
 	);
-	/* return (
-		<div className="project">
-			<div
-				className="project-front"
-				style={{ backgroundImage: `url(${icon})` }}
-			></div>
-			<div
-				className="project-back"
-				style={{
-					backgroundColor: `var(--${color}-${
-						theme === "light" ? 100 : 700
-					})`,
-				}}
-			>
-				<div className="project-icon">
-					<img src={icon} alt={title} />
-				</div>
-				<span className="project-title">{_.startCase(title)}</span>
-				<a
-					href={deployment}
-					className="project-link"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<FiLink />
-					{deployment.slice(8, deployment.length)}
-				</a>
-				<a
-					href={githubLink}
-					className="project-github"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<FiGithub />
-					{repo_name}
-				</a>
-				<span className="project-about">{about}</span>
-				<div className="project-tools">
-					{tools.map((tool, index) => (
-						<span key={index} data-title={tool}>
-							<img src={skillsMap.get(tool)} alt={tool} />
-						</span>
-					))}
-				</div>
-				<div className="project-tags">
-					{tags.map((tag, index) => (
-						<Chip key={index}>{tag}</Chip>
-					))}
-				</div>
-			</div>
-		</div>
-	); */
 };
 
 export default Project;

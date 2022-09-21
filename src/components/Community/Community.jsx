@@ -1,7 +1,8 @@
 import React from "react";
-import Button from "../../components/Button/Button";
+import Button from "../Button/Button";
+import "./community.css";
 
-const Community = ({ title, about, post,period, profile, image, color }) => {
+const Community = ({ title, about, post, period, profile, image, color }) => {
 	return (
 		<div className="community-card">
 			<div

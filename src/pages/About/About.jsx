@@ -1,13 +1,13 @@
 import React from "react";
 import "./about.css";
 import wave from "../../images/wave.gif";
-import Community from "./Community";
+import Community from "../../components/Community/Community";
 import communitites from "../../utils/communities";
 import me from "../../images/Akshat_Transparent.png";
 import education from "../../utils/education";
-import Education from "./Education";
+import Education from "../../components/Education/Education";
 import experience from "../../utils/experience";
-import Experience from "./Experience";
+import Experience from "../../components/Experience/Experience";
 import Row, { Col } from "../../Layout/Responsive";
 
 const About = () => {
