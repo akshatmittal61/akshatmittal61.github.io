@@ -6,6 +6,9 @@ import communitites from "../../utils/communities";
 import me from "../../images/Akshat_Transparent.png";
 import education from "../../utils/education";
 import Education from "./Education";
+import experience from "../../utils/experience";
+import Experience from "./Experience";
+import Row, { Col } from "../../Layout/Responsive";
 
 const About = () => {
 	return (
@@ -43,24 +46,13 @@ const About = () => {
 			</div>
 			<div className="about-body">
 				<div className="about-body__p">
-					<div className="row">
+					<Row>
 						{communitites.map((community, index) => (
-							<div
-								key={index}
-								className="col-lg-33 col-md-50 col-sm-100"
-							>
-								<Community
-									title={community.title}
-									about={community.about}
-									post={community.post}
-									period={community.period}
-									profile={community.profile}
-									color={community.color}
-									image={community.image}
-								/>
-							</div>
+							<Col key={index} lg={33} md={50} sm={100}>
+								<Community {...community} />
+							</Col>
 						))}
-					</div>
+					</Row>
 				</div>
 			</div>
 			<div className="about-head">
@@ -71,6 +63,20 @@ const About = () => {
 					{education.map((edu, id) => (
 						<Education key={id} {...edu} />
 					))}
+				</div>
+			</div>
+			<div className="about-head">
+				<h3 className="about-head__h3">Experience</h3>
+			</div>
+			<div className="about-body">
+				<div className="about-body__p">
+					<Row>
+						{experience.reverse().map((ex, id) => (
+							<Col key={id} lg={33} md={50} sm={100}>
+								<Experience {...ex} />
+							</Col>
+						))}
+					</Row>
 				</div>
 			</div>
 		</main>

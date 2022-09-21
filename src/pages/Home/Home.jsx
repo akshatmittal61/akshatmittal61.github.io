@@ -108,7 +108,7 @@ const Home = () => {
 						</span>
 						<span>
 							Presently I am a MERN Stack Developer and over the
-							time, I've developed some applications that are live
+							time, I've developed web applications that are live
 							on the internet and being used by over 100+ users.
 						</span>
 						<span>
