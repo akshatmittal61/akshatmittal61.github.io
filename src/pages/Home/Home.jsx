@@ -3,7 +3,6 @@ import dotsTriangle from "../../images/dots-triangle.svg";
 import socials from "../../utils/socials";
 import wave from "../../images/wave.gif";
 import akshat from "../../images/Akshat_Transparent.png";
-import "./home.css";
 import Button from "../../components/Button/Button";
 import GlobalContext from "../../Context/GlobalContext";
 import skills from "../../utils/skills";
@@ -13,6 +12,7 @@ import { default as projectNames } from "../../utils/projects.js";
 import Row, { Col } from "../../Layout/Responsive";
 import Project from "../../components/Project/Project";
 import Typing from "../../Layout/Typing/Typing";
+import "./home.scss";
 
 const Home = () => {
 	const { breakpoint } = useContext(GlobalContext);

@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import IconMask from "../../images/IconMask";
-import "./button.css";
+import "./button.scss";
 
 const IconButton = ({
 	color = "blue",

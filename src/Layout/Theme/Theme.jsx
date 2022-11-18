@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import Icon from "../../components/Button/Icon";
 import MaterialIcons from "../../components/MaterialIcons";
 import GlobalContext from "../../Context/GlobalContext";
-import "./theme.css";
+import "./theme.scss";
 
 const Theme = () => {
 	const { theme, setTheme } = useContext(GlobalContext);

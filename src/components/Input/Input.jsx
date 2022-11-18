@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialIcons from "../MaterialIcons";
-import "./input.css";
+import "./input.scss";
 
 const Input = ({ icon, ...rest }) => (
 	<div className="form-group">

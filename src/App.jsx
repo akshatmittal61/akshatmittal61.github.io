@@ -1,7 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "./style.css";
 import Navigation from "./components/Navigation/Navigation";
 import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
@@ -10,6 +7,9 @@ import Cursor from "./Layout/Cursor/Cursor";
 import Theme from "./Layout/Theme/Theme";
 import { mappedRoutes } from "./routes";
 import Footer from "./components/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./style.scss";
 
 const App = () => {
 	AOS.init();

@@ -5,7 +5,7 @@ import Card from "../../components/Card/Card";
 import Input, { TextArea } from "../../components/Input/Input";
 import socials from "../../utils/socials";
 import emailjs from "emailjs-com";
-import "./contact.css";
+import "./contact.scss";
 
 const Contact = () => {
 	const [userMessage, setUserMessage] = useState({

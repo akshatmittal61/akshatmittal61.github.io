@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
-import "./community.css";
+import "./community.scss";
 
 const Community = ({ title, about, post, period, profile, image, color }) => {
 	return (

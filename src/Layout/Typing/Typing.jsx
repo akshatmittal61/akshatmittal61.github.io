@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { sleep } from "../../utils";
-import "./typing.css";
+import "./typing.scss";
 
 const Typing = ({ text = "", children }) => {
 	const Text = children || text;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./cursor.css";
+import "./cursor.scss";
 
 const Cursor = () => {
 	const [cursorStyle, setCursorStyle] = useState({

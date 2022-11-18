@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
-import "./experience.css";
+import "./experience.scss";
 
 const Experience = ({
 	company,

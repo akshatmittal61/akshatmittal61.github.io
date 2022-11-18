@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./projects.css";
+import "./projects.scss";
 import { default as projectNames } from "../../utils/projects.js";
 import Project from "../../components/Project/Project";
 

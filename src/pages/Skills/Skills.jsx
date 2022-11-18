@@ -3,7 +3,7 @@ import Card from "../../components/Card/Card";
 import dev_activity from "../../images/developer_activity.svg";
 import skills from "../../utils/skills";
 import bulb from "../../images/bulb_on.svg";
-import "./skills.css";
+import "./skills.scss";
 import GlobalContext from "../../Context/GlobalContext";
 
 const Skills = () => {

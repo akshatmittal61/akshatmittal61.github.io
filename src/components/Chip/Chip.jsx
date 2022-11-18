@@ -1,5 +1,5 @@
 import React from "react";
-import "./chip.css";
+import "./chip.scss";
 
 const Chip = ({ children }) => {
 	return <span className="chip">{children}</span>;

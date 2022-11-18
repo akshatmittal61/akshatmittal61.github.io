@@ -4,7 +4,7 @@ import { FiGithub, FiLink } from "react-icons/fi";
 import { skillsMap } from "../../utils/skills";
 import Chip from "../Chip/Chip";
 import GlobalContext from "../../Context/GlobalContext";
-import "./project.css";
+import "./project.scss";
 
 const Project = ({
 	title,

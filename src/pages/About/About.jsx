@@ -1,5 +1,4 @@
 import React from "react";
-import "./about.css";
 import wave from "../../images/wave.gif";
 import Community from "../../components/Community/Community";
 import communitites from "../../utils/communities";
@@ -9,6 +8,7 @@ import Education from "../../components/Education/Education";
 import experience from "../../utils/experience";
 import Experience from "../../components/Experience/Experience";
 import Row, { Col } from "../../Layout/Responsive";
+import "./about.scss";
 
 const About = () => {
 	return (
