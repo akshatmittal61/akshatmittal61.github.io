@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useLayoutEffect } from "react";
 import Navigation from "./components/Navigation/Navigation";
 import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
@@ -18,6 +18,15 @@ const App = () => {
 	useEffect(() => {
 		setOpenNavBar(false);
 	}, [location.pathname, setOpenNavBar]);
+	useLayoutEffect(() => {
+		const loader = document.getElementById("loader");
+		setTimeout(() => {
+			loader.classList.add("loaded");
+			setTimeout(() => {
+				document.body.removeChild(loader);
+			}, 500);
+		}, 2000);
+	}, []);
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [location.pathname]);
