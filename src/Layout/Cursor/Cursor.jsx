@@ -1,44 +1,53 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import "./cursor.scss";
 
 const Cursor = () => {
 	const [cursorStyle, setCursorStyle] = useState({
-		left: 0,
-		top: 0,
+		x: 0,
+		y: 0,
+	});
+	const [cursorBallStyle, setCursorBallStyle] = useState({
+		x: 0,
+		y: 0,
 	});
 	useEffect(() => {
-		window.addEventListener("mousemove", (e) => {
+		const cursorControl = (e) => {
 			setCursorStyle((prev) => ({
 				...prev,
-				left: `${e.pageX}px`,
-				top: `${e.pageY}px`,
+				x: e.pageX,
+				y: e.pageY,
 			}));
-		});
+			setCursorBallStyle((prev) => ({
+				...prev,
+				x: e.pageX,
+				y: e.pageY,
+			}));
+		};
+		window.addEventListener("mousemove", cursorControl);
 		return () => {
-			window.removeEventListener("mousemove", (e) => {
-				setCursorStyle((prev) => ({
-					...prev,
-					left: `${e.pageX}px`,
-					top: `${e.pageY}px`,
-				}));
-			});
+			window.removeEventListener("mousemove", cursorControl);
 		};
 	}, []);
 
 	return (
-		<span
-			className="cursor"
-			id="cursor"
-			style={{
-				left: cursorStyle.left,
-				top: cursorStyle.top,
-			}}
-		>
-			<span className="cursor-top"></span>
-			<span className="cursor-right"></span>
-			<span className="cursor-bottom"></span>
-			<span className="cursor-left"></span>
-		</span>
+		<>
+			<div
+				className="cursor"
+				style={{
+					left: cursorStyle.x,
+					top: cursorStyle.y,
+				}}
+			></div>
+			<div
+				className="cursor-ball"
+				style={{
+					left: cursorBallStyle.x,
+					top: cursorBallStyle.y,
+				}}
+			></div>
+		</>
 	);
 };
 

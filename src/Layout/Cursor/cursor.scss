@@ -1,43 +1,29 @@
 .cursor {
-	width: 24px;
-	height: 24px;
+	width: 30px;
+	height: 30px;
 	border-radius: 100%;
-	border: 2px solid rgb(141, 141, 141);
-	transition: transform 75ms ease-out 0s;
-	position: absolute;
-	top: 50vh;
-	left: 50vw;
-	transform: translate(-50%, -50%);
-	z-index: 999999;
+	border: 1px solid rgb(120, 120, 120);
+	transition: all 200ms ease-out;
 	pointer-events: none;
-	& > * {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999999;
+	transform: translate(calc(-50% - 3.5px), calc(-50% - 3.5px));
+
+	&-ball {
+		width: 9px;
+		height: 9px;
+		border-radius: 100%;
+		background-color: rgba(0, 0, 0, 0.65);
+		pointer-events: none;
 		position: absolute;
-		background-color: rgb(141, 141, 141);
-	}
-	&-top,
-	&-bottom {
-		width: 1px;
-		height: 7px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	&-left,
-	&-right {
-		width: 7px;
-		height: 1px;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-	&-top {
-		top: 0;
-	}
-	&-bottom {
-		bottom: 0;
-	}
-	&-left {
-		left: 0;
-	}
-	&-right {
-		right: 0;
+		z-index: 999999;
+		transition: width .3s, height .3s, opacity .3s;
+		transform: translate(-50%, -50%);
+
+		body.dark & {
+			background-color: rgba(255, 255, 255, 0.65);
+		}
 	}
 }
