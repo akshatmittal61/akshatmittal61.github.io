@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import people from "../../images/people.svg";
 import emailjs from "emailjs-com";
 import Input, { TextArea } from "../Input/Input";
 import Button from "../Button/Button";
 import "./footer.scss";
+import { people } from "../../vectors";
 
 const Footer = () => {
 	const [userMessage, setUserMessage] = useState({

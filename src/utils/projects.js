@@ -1,10 +1,12 @@
-import plannerIcon from "../images/projects/planner.svg";
-import flavorsomeIcon from "../images/projects/flavorsome.svg";
-import whackAMoleIcon from "../images/projects/whack-a-mole.png";
-import forceIcon from "../images/projects/force.png";
-import techtatvaIcon from "../images/projects/techtatva.png";
-import screenRecorderIcon from "../images/projects/screen-recorder.png";
-import srmIcon from "../images/projects/srm.png";
+import {
+	flavorsomeIcon,
+	forcePng,
+	plannerIcon,
+	screenRecorderIcon,
+	srmIcon,
+	techtatvaIcon,
+	whackAMoleIcon,
+} from "../images";
 
 const projects = [
 	{
@@ -30,7 +32,7 @@ const projects = [
 	},
 	{
 		title: "force-iiitu",
-		icon: forceIcon,
+		icon: forcePng,
 		color: "brown",
 		owner: "akshatmittal61",
 		tools: ["React.js", "Node.js", "CSS", "SASS"],

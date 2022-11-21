@@ -1,17 +1,19 @@
-import html from "../images/icons/html.svg";
-import css from "../images/icons/css.svg";
-import js from "../images/icons/js.svg";
-import sass from "../images/icons/sass.svg";
-import mongodb from "../images/icons/mongodb.svg";
-import mySql from "../images/icons/mysql.svg";
-import express from "../images/icons/express.svg";
-import react from "../images/icons/react.svg";
-import mui from "../images/icons/mui.svg";
-import node from "../images/icons/node.svg";
-import c from "../images/icons/C.svg";
-import cpp from "../images/icons/cpp.svg";
-import python from "../images/icons/python.svg";
-import git from "../images/icons/git.svg";
+import {
+	c,
+	cpp,
+	css,
+	express,
+	git,
+	html,
+	js,
+	mongodb,
+	mui,
+	mySql,
+	node,
+	python,
+	react,
+	sass,
+} from "../vectors";
 
 const skills = [
 	{

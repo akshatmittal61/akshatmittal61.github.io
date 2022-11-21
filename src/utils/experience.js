@@ -1,5 +1,4 @@
-import techsnap from "../images/experience/techsnap.png";
-import stakeeasy from "../images/experience/stakeeasy.png";
+import { stakeeasy, techsnap } from "../images";
 
 const experience = [
 	{

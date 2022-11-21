@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Button/Button";
-import illustration from "../../images/illustration_404.svg";
+import { illustration } from "../../vectors";
 import "./not-found.scss";
 
 const NotFound = () => {

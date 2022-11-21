@@ -1,7 +1,4 @@
-import forceIcon from "../images/communities/force.jpeg";
-import aaveshIcon from "../images/communities/aavesh.jpeg";
-import epmocIcon from "../images/communities/epmoc.jpg";
-import eunoiaIcon from "../images/communities/eunoia.jpeg";
+import { aaveshIcon, epmocIcon, eunoiaIcon, forceIcon } from "../images";
 
 const communitites = [
 	{

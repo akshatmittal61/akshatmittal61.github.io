@@ -1,14 +1,13 @@
 import React from "react";
-import wave from "../../images/wave.gif";
 import Community from "../../components/Community/Community";
 import communitites from "../../utils/communities";
-import me from "../../images/Akshat_Transparent.png";
 import education from "../../utils/education";
 import Education from "../../components/Education/Education";
 import experience from "../../utils/experience";
 import Experience from "../../components/Experience/Experience";
 import Row, { Col } from "../../Layout/Responsive";
 import "./about.scss";
+import { akshat, wave } from "../../images";
 
 const About = () => {
 	return (
@@ -37,7 +36,7 @@ const About = () => {
 					</p>
 				</div>
 				<div className="about-head-image">
-					<img src={me} alt="Akshat Mittal" />
+					<img src={akshat} alt="Akshat Mittal" />
 				</div>
 			</div>
 			<div className="about-body"></div>

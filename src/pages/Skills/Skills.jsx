@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import Card from "../../components/Card/Card";
-import dev_activity from "../../images/developer_activity.svg";
 import skills from "../../utils/skills";
-import bulb from "../../images/bulb_on.svg";
 import "./skills.scss";
 import GlobalContext from "../../Context/GlobalContext";
+import { bulb, dev_activity } from "../../vectors";
 
 const Skills = () => {
 	const { breakpoint } = useContext(GlobalContext);

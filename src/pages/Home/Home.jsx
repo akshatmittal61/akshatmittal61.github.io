@@ -1,18 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
-import dotsTriangle from "../../images/dots-triangle.svg";
 import socials from "../../utils/socials";
-import wave from "../../images/wave.gif";
-import akshat from "../../images/Akshat_Transparent.png";
 import Button from "../../components/Button/Button";
 import GlobalContext from "../../Context/GlobalContext";
 import skills from "../../utils/skills";
-import bulb from "../../images/bulb_on.svg";
 import axios from "axios";
 import { default as projectNames } from "../../utils/projects.js";
 import Row, { Col } from "../../Layout/Responsive";
 import Project from "../../components/Project/Project";
 import Typing from "../../Layout/Typing/Typing";
 import "./home.scss";
+import { akshat, wave } from "../../images";
+import { bulb, dotsTriangle } from "../../vectors";
 
 const Home = () => {
 	const { breakpoint } = useContext(GlobalContext);

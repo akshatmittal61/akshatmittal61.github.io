@@ -1,5 +1,4 @@
-import graduationCap from "../images/graduation-cap.svg";
-import school from "../images/school.svg";
+import { graduationCap, school } from "../vectors";
 
 const education = [
 	{
