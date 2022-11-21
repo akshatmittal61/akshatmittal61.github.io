@@ -1,19 +1,15 @@
 import React, { useContext, useEffect, useLayoutEffect } from "react";
-import Navigation from "./components/Navigation/Navigation";
 import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
-import NavButton from "./components/Navigation/NavButton";
 import Cursor from "./Layout/Cursor/Cursor";
-import Theme from "./Layout/Theme/Theme";
 import { mappedRoutes } from "./routes";
-import Footer from "./components/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.scss";
 
 const App = () => {
 	AOS.init();
-	const { openNavBar, setOpenNavBar, breakpoint } = useContext(GlobalContext);
+	const { setOpenNavBar, breakpoint } = useContext(GlobalContext);
 	const location = useLocation();
 	useEffect(() => {
 		setOpenNavBar(false);
@@ -35,13 +31,6 @@ const App = () => {
 			{!breakpoint("mobile") && location.pathname !== "/resume" && (
 				<Cursor />
 			)}
-			{location.pathname !== "/resume" && (
-				<>
-					<Theme />
-					<NavButton />
-				</>
-			)}
-			{openNavBar && <Navigation />}
 			<Routes>
 				{mappedRoutes.map((route, index) => (
 					<Route
@@ -51,8 +40,6 @@ const App = () => {
 					/>
 				))}
 			</Routes>
-			{location.pathname !== "/resume" &&
-				location.pathname !== "/contact" && <Footer />}
 		</>
 	);
 };
