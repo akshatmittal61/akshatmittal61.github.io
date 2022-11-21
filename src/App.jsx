@@ -25,7 +25,7 @@ const App = () => {
 			setTimeout(() => {
 				document.body.removeChild(loader);
 			}, 500);
-		}, 2000);
+		}, 3000);
 	}, []);
 	useEffect(() => {
 		window.scrollTo(0, 0);
