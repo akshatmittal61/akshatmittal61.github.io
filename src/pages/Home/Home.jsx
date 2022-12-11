@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "../../components/Link/Link";
 import "./home.scss";
 
 const Home = () => {
@@ -13,16 +14,21 @@ const Home = () => {
 				<p className="home-hero-about">
 					I am a full stack developer with a passion for building
 					beautiful and intuitive web applications. I am currently
-					pursuing my Bachelors in Computer Science from the Indian
-					Institute of Information Technology -&gt; IIIT Una. I am
-					currently working as a SDE Intern at{" "}
-					<a
+					pursuing my Bachelors in Computer Science from{" "}
+					<abbr
+						data-title="Indian Institute of Information Technology"
+						title=""
+					>
+						IIIT
+					</abbr>{" "}
+					Una and working as a SDE Intern at{" "}
+					<Link
 						href="https://athenasquare.org/"
 						target="_blank"
 						rel="noreferrer"
 					>
 						Athenasquare
-					</a>
+					</Link>
 					.
 				</p>
 				<button>Download my Resume</button>

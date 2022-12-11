@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Cookie&family=Dancing+Script&family=Gaegu&family=Handlee&family=Indie+Flower&family=Just+Me+Again+Down+Here&family=Kalam&family=Megrim&family=Montserrat:wght@100;400;700&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100;400;700&family=Redressed&family=Reenie+Beanie&family=Roboto&family=Sacramento&family=Aldrich&display=swap");
+
 @font-face {
 	font-family: "Google Sans";
 	src: url("../fonts/Google-Sans/GoogleSans-Regular.eot");
@@ -127,6 +129,102 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "SF-Mono-Bold";
+	src: url("../fonts/SF-Mono/SFMono-Bold.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-BoldItalic";
+	src: url("../fonts/SF-Mono/SFMono-BoldItalic.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-Heavy";
+	src: url("../fonts/SF-Mono/SFMono-Heavy.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-HeavyItalic";
+	src: url("../fonts/SF-Mono/SFMono-HeavyItalic.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-Light";
+	src: url("../fonts/SF-Mono/SFMono-Light.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-LightItalic";
+	src: url("../fonts/SF-Mono/SFMono-LightItalic.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-Medium";
+	src: url("../fonts/SF-Mono/SFMono-Medium.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-MediumItalic";
+	src: url("../fonts/SF-Mono/SFMono-MediumItalic.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-Regular";
+	src: url("../fonts/SF-Mono/SFMono-Regular.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-RegularItalic";
+	src: url("../fonts/SF-Mono/SFMono-RegularItalic.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-Semibold";
+	src: url("../fonts/SF-Mono/SFMono-Semibold.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF-Mono-SemiboldItalic";
+	src: url("../fonts/SF-Mono/SFMono-SemiboldItalic.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root,
 :root::before,
 :root::after {
@@ -139,39 +237,28 @@
 		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
 
-	--font-gilroy-regular: "Gilroy-Regular", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--font-gilroy-bold: "Gilroy-Bold", Cabin, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-		"Helvetica Neue", sans-serif;
-	--font-gilroy-light: "Gilroy-Light", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--font-gilroy-medium: "Gilroy-Medium", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--font-gilroy-thin: "Gilroy-Thin", Cabin, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-		"Helvetica Neue", sans-serif;
+	--font-aldrich: "Aldrich", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-	--font-overcame-regular: "Overcame-Regular", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--font-overcame-bold: "Overcame-Bold", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--font-overcame-italic: "Overcame-Italic", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--font-overcame-bold-italic: "Overcame-Bold-Italic", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
-	--font-overcame-outline: "Overcame-Outline", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
+	--font-gilroy-regular: "Gilroy-Regular", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-gilroy-bold: "Gilroy-Bold", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-gilroy-light: "Gilroy-Light", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-gilroy-medium: "Gilroy-Medium", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-gilroy-thin: "Gilroy-Thin", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-	--font-helvetica-outline: "Helvetica-Outline", Cabin, -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
+	--font-overcame-regular: "Overcame-Regular", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-overcame-bold: "Overcame-Bold", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-overcame-italic: "Overcame-Italic", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-overcame-bold-italic: "Overcame-Bold-Italic", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-overcame-outline: "Overcame-Outline", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	--font-helvetica-outline: "Helvetica-Outline", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	--font-sf-mono-bold: "SF-Mono-Bold", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sf-mono-bold-italic: "SF-Mono-BoldItalic", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sf-mono-medium: "SF-Mono-Medium", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sf-mono-medium-italic: "SF-Mono-MediumItalic", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sf-mono-regular: "SF-Mono-Regular", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sf-mono-regular-italic: "SF-Mono-RegularItalic", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sf-mono-semibold: "SF-Mono-Semibold", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sf-mono-semibold-italic: "SF-Mono-SemiboldItalic", Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
