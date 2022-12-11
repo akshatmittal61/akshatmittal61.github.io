@@ -1,0 +1,123 @@
+@import "../../sass/config";
+
+.header {
+    width: 100%;
+    height: var(--head-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(10px);
+
+    &-logo {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        img {
+            width: auto;
+            height: 100%;
+            transform: scale(1.5);
+
+            @include theme(light) {
+                filter: invert(0);
+            }
+
+            @include theme(dark) {
+                filter: invert(1);
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    &-button {
+        width: 4.5rem;
+        margin: 0 0 0 1rem;
+        color: var(--b-lightest-slate);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--b-light-slate);
+        border-radius: 4px;
+        padding: 0.5rem 0.75rem;
+        transition: all 0.3s ease-in-out;
+
+        &-line {
+            width: 16px;
+            height: 1px;
+            background-color: var(--b-lightest-slate);
+            position: relative;
+            top: 50%;
+            transition: all 0.3s ease-in-out;
+            margin-right: 0.5rem;
+            transform: translateY(-50%);
+
+            &::before,
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: var(--b-lightest-slate);
+                position: absolute;
+                left: 0;
+            }
+
+            &::before {
+                top: -5px;
+            }
+
+            &::after {
+                bottom: -5px;
+            }
+        }
+
+        &:hover {
+            border-color: var(--b-green);
+            color: var(--b-green);
+
+            .header-button-line {
+                background-color: var(--b-green);
+
+                &::before,
+                &::after {
+                    background-color: var(--b-green);
+                }
+            }
+        }
+    }
+
+    &-nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+
+            li {
+                margin: 0 1rem;
+
+                a {
+                    text-decoration: none;
+                    color: var(--b-lightest-slate);
+                    font-weight: 500;
+                    letter-spacing: 0.1rem;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        color: var(--b-green);
+                    }
+                }
+            }
+        }
+    }
+}

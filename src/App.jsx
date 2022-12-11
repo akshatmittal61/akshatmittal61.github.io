@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Left from "./Layout/Sidebars/Left";
 import Right from "./Layout/Sidebars/Right";
+import Header from "./components/Header/Header";
 
 const App = () => {
 	AOS.init();
@@ -33,6 +34,7 @@ const App = () => {
 			{!breakpoint("mobile") && location.pathname !== "/resume" && (
 				<Cursor />
 			)}
+			<Header />
 			<Left />
 			<Routes>
 				{mappedRoutes.map((route, index) => (

@@ -22,6 +22,10 @@ import dotsTriangle from "./dots-triangle.svg";
 import illustration from "./illustration_404.svg";
 import dev_activity from "./developer_activity.svg";
 
+import avatar from "./avatar.svg";
+import fullLogo from "./full-logo.svg";
+import logoA from "./logo-a.svg";
+
 export {
 	graduationCap,
 	school,
@@ -44,4 +48,7 @@ export {
 	dotsTriangle,
 	illustration,
 	dev_activity,
+	avatar,
+	fullLogo,
+	logoA,
 };
