@@ -1,0 +1,36 @@
+.home {
+    padding: 0 9rem;
+
+    &-hero {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column;
+        padding: 0 2rem;
+
+        span {
+            color: var(--b-green);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 5rem;
+            line-height: 120%;
+            color: var(--b-light-slate);
+            letter-spacing: 0.25rem;
+        }
+
+        h2 {
+            font-size: 3.75rem;
+            line-height: 5rem;
+        }
+
+        p {
+            width: 60%;
+            line-height: 150%;
+            margin: 1.5rem 0;
+        }
+    }
+}

@@ -43,3 +43,17 @@
 		}
 	}
 }
+
+@mixin theme($theme) {
+	@if $theme ==light {
+		body.light & {
+			@content;
+		}
+	}
+
+	@if $theme ==dark {
+		body.dark & {
+			@content;
+		}
+	}
+}

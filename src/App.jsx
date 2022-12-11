@@ -2,10 +2,10 @@ import React, { useContext, useEffect, useLayoutEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalContext from "./Context/GlobalContext";
 import Cursor from "./Layout/Cursor/Cursor";
+import "./style.scss";
 import { mappedRoutes } from "./routes";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./style.scss";
 
 const App = () => {
 	AOS.init();

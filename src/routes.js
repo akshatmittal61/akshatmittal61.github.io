@@ -1,7 +1,15 @@
+import Home from "./pages/Home/Home";
 import Resume from "./pages/Resume";
 import IncludePageTitle from "./utils/includePageTitle";
 
-const routes = [];
+const routes = [
+	{
+		icon: "home",
+		title: "Home",
+		route: "/",
+		component: Home,
+	},
+];
 
 const allRoutes = [
 	...routes,
