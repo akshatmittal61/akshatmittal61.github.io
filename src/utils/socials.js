@@ -1,10 +1,10 @@
 import {
 	FiGithub,
-	FiTwitter,
 	FiLinkedin,
 	FiMail,
 	FiInstagram,
 	FiCodepen,
+	FiCode,
 } from "react-icons/fi";
 
 const socials = [
@@ -27,6 +27,12 @@ const socials = [
 		color: "var(--red-700)",
 	},
 	{
+		icon: <FiCode />,
+		username: "akshatmittal61",
+		link: "https://leetcode.com/akshatmittal61",
+		color: "var(--yellow-700)",
+	},
+	{
 		icon: <FiCodepen />,
 		username: "akshatmittal61",
 		link: "https://codepen.io/akshatmittal61",
@@ -37,12 +43,6 @@ const socials = [
 		username: "@akshatmittal61",
 		link: "https://instagram.com/akshatmittal61",
 		color: "var(--pink)",
-	},
-	{
-		icon: <FiTwitter />,
-		username: "@akshatmittal61",
-		link: "https://twitter.com/akshatmittal61",
-		color: "var(--light-blue)",
 	},
 ];
 

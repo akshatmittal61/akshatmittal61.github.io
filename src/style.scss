@@ -58,6 +58,12 @@ body {
 	line-height: 1.25rem;
 	transition: all var(--transition-time) ease-in-out;
 	overflow-x: hidden;
+	background-image: url('https://marketplace.canva.com/EAE3Xni-QyQ/1/0/900w/canva-moonlight-blue-landscape-ios-home-screen-Pvnvis33vsc.jpg');
+	background-attachment: fixed;
+	background-position-x: center;
+	background-position-y: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	@include theme(light) {
 		background-color: var(--b-slate);

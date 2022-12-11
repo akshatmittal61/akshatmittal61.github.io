@@ -6,13 +6,13 @@ import "./header.scss";
 const Header = () => {
 	const navLinks = [
 		{
-			name: "About",
-			href: "#about",
-		},
-		{
 			name: "Work",
 			href: "#experience",
 		},
+        {
+            name: "Projects",
+            href: "#projects",
+        },
 		{
 			name: "Contact",
 			href: "#contact",
