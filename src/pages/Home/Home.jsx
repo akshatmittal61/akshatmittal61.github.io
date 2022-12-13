@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../components/Button/Button";
 import Link from "../../components/Link/Link";
 import { bulb } from "../../vectors";
 import "./home.scss";
@@ -32,7 +33,7 @@ const Home = () => {
 					</Link>
 					.
 				</p>
-				<button>Download my Resume</button>
+				<Button text="Download my Resume" link="/resume" />
 			</section>
 			<section className="home-about">
 				<h2 className="home-about-heading">About Me</h2>
@@ -46,8 +47,8 @@ const Home = () => {
 					>
 						MERN
 					</abbr>{" "}
-					stack. I am also learning new technologies and
-					frameworks to learn new things.
+					stack. I am also learning new technologies and frameworks to
+					learn new things.
 				</p>
 				<p className="home-about-text">
 					Feel free to <Link href="#contact">reach out to me</Link> if

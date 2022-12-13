@@ -13,25 +13,25 @@
         flex-flow: column;
         padding: 0 2rem;
 
-        span {
+        &>span {
             color: var(--b-green);
             font-family: var(--font-aldrich);
             margin-bottom: 1.5rem;
         }
 
-        h1 {
+        &>h1 {
             font-size: 5rem;
             line-height: 120%;
             color: var(--b-lightest-slate);
             letter-spacing: 0.25rem;
         }
 
-        h2 {
+        &>h2 {
             font-size: 3.75rem;
             line-height: 5rem;
         }
 
-        p {
+        &>p {
             width: 60%;
             line-height: 150%;
             font-size: 1.125rem;

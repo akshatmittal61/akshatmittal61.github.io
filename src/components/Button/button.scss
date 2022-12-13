@@ -1,0 +1,33 @@
+button {
+    all: unset;
+}
+
+.btn {
+    color: var(--b-lightest-slate);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--b-light-slate);
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    transition: all 0.3s ease-in-out, border-radius 0.5s ease-in-out;
+
+    &-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    &:hover {
+        border-color: var(--b-green);
+        color: var(--b-green);
+        border-radius: 500px;
+    }
+
+    &-sm {
+        padding: 0.5rem 0.7rem;
+    }
+}

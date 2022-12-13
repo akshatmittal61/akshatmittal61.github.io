@@ -41,14 +41,6 @@
 
     &-button {
         width: 4.5rem;
-        color: var(--b-lightest-slate);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid var(--b-light-slate);
-        border-radius: 4px;
-        padding: 0.5rem 0.75rem;
-        transition: all 0.3s ease-in-out;
         position: fixed;
         right: 4.5rem;
 
@@ -81,17 +73,12 @@
             }
         }
 
-        &:hover {
-            border-color: var(--b-green);
-            color: var(--b-green);
+        &:hover &-line {
+            background-color: var(--b-green);
 
-            .header-button-line {
+            &::before,
+            &::after {
                 background-color: var(--b-green);
-
-                &::before,
-                &::after {
-                    background-color: var(--b-green);
-                }
             }
         }
     }

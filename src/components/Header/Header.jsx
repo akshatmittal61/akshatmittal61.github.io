@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { fullLogo } from "../../vectors";
+import Button from "../Button/Button";
 import "./header.scss";
 
 const Header = () => {
@@ -9,10 +10,10 @@ const Header = () => {
 			name: "Work",
 			href: "#experience",
 		},
-        {
-            name: "Projects",
-            href: "#projects",
-        },
+		{
+			name: "Projects",
+			href: "#projects",
+		},
 		{
 			name: "Contact",
 			href: "#contact",
@@ -41,10 +42,16 @@ const Header = () => {
 						))}
 					</ul>
 				</nav>
-				<button className="header-button">
-					<span className="header-button-line"></span>
-					<span className="header-button-text">Menu</span>
-				</button>
+				<Button
+					className="header-button"
+					size="small"
+					text={
+						<>
+							<span className="header-button-line"></span>
+							<span className="header-button-text">Menu</span>
+						</>
+					}
+				/>
 			</div>
 		</header>
 	);

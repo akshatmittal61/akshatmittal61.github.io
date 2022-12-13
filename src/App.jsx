@@ -32,10 +32,13 @@ const App = () => {
 	return (
 		<>
 			{!breakpoint("mobile") && location.pathname !== "/resume" && (
-				<Cursor />
+				<>
+					<Cursor />
+					<Header />
+					<Left />
+					<Right />
+				</>
 			)}
-			<Header />
-			<Left />
 			<Routes>
 				{mappedRoutes.map((route, index) => (
 					<Route
@@ -45,7 +48,6 @@ const App = () => {
 					/>
 				))}
 			</Routes>
-			<Right />
 		</>
 	);
 };
