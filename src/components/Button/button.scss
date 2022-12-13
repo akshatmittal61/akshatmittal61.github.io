@@ -9,7 +9,7 @@ button {
     align-items: center;
     border: 1px solid var(--b-light-slate);
     border-radius: 4px;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.15rem;
     transition: all 0.3s ease-in-out, border-radius 0.5s ease-in-out;
 
     &-icon {
@@ -28,6 +28,7 @@ button {
     }
 
     &-sm {
-        padding: 0.5rem 0.7rem;
+        padding: 0.4rem 0.75rem;
+        font-size: 0.925rem;
     }
 }

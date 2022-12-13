@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import GlobalContext from "../../Context/GlobalContext";
 import { fullLogo } from "../../vectors";
 import Button from "../Button/Button";
 import "./header.scss";
 
 const Header = () => {
+	const { openMenu, setOpenMenu } = useContext(GlobalContext);
 	const navLinks = [
 		{
 			name: "Work",
@@ -47,10 +49,19 @@ const Header = () => {
 					size="small"
 					text={
 						<>
-							<span className="header-button-line"></span>
-							<span className="header-button-text">Menu</span>
+							<span
+								className={
+									openMenu
+										? "header-button-line header-button-close"
+										: "header-button-line"
+								}
+							></span>
+							<span className="header-button-text">
+								{openMenu ? "Close" : "Menu"}
+							</span>
 						</>
 					}
+					onClick={() => setOpenMenu((p) => !p)}
 				/>
 			</div>
 		</header>

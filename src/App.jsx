@@ -9,14 +9,15 @@ import "aos/dist/aos.css";
 import Left from "./Layout/Sidebars/Left";
 import Right from "./Layout/Sidebars/Right";
 import Header from "./components/Header/Header";
+import Menu from "./components/Menu/Menu";
 
 const App = () => {
 	AOS.init();
-	const { setOpenNavBar, breakpoint } = useContext(GlobalContext);
+	const { openMenu, setOpenMenu, breakpoint } = useContext(GlobalContext);
 	const location = useLocation();
 	useEffect(() => {
-		setOpenNavBar(false);
-	}, [location.pathname, setOpenNavBar]);
+		setOpenMenu(false);
+	}, [location.pathname, setOpenMenu]);
 	useLayoutEffect(() => {
 		const loader = document.getElementById("loader");
 		setTimeout(() => {
@@ -39,6 +40,9 @@ const App = () => {
 					<Right />
 				</>
 			)}
+			{
+				openMenu&&<Menu />
+			}
 			<Routes>
 				{mappedRoutes.map((route, index) => (
 					<Route

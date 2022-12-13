@@ -40,9 +40,10 @@
     }
 
     &-button {
-        width: 4.5rem;
+        width: 4.15rem;
         position: fixed;
         right: 4.5rem;
+        z-index: 15;
 
         &-line {
             width: 16px;
@@ -51,7 +52,7 @@
             position: relative;
             top: 50%;
             transition: all 0.3s ease-in-out;
-            margin-right: 0.5rem;
+            margin-right: 0.25rem;
             transform: translateY(-50%);
 
             &::before,
@@ -79,6 +80,22 @@
             &::before,
             &::after {
                 background-color: var(--b-green);
+            }
+        }
+
+        &:hover &-close {
+            background-color: transparent;
+        }
+
+        &-close {
+            background: transparent;
+
+            &::before {
+                transform: translateY(5px) rotate(45deg);
+            }
+
+            &::after {
+                transform: translateY(-5px) rotate(-45deg);
             }
         }
     }

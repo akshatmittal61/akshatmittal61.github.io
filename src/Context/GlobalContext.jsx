@@ -9,7 +9,7 @@ export const GlobalProvider = ({ children }) => {
 		else return window.innerWidth > 880;
 	};
 	const [isLoading, setIsLoading] = useState(false);
-	const [openNavBar, setOpenNavBar] = useState(false);
+	const [openMenu, setOpenMenu] = useState(true);
 	const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 	return (
 		<GlobalContext.Provider
@@ -17,8 +17,8 @@ export const GlobalProvider = ({ children }) => {
 				isLoading,
 				setIsLoading,
 				breakpoint,
-				openNavBar,
-				setOpenNavBar,
+				openMenu,
+				setOpenMenu,
 				theme,
 				setTheme,
 			}}
