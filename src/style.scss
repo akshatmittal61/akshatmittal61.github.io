@@ -33,7 +33,7 @@
 
 html {
 	font-size: 16px;
-	overflow-x: hidden;
+	scroll-snap-type: y mandatory;
 
 	@include respond(big-desktop) {
 		font-size: 18px;
