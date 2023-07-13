@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../components/Button/Button";
+import Input, { TextArea } from "../../components/Input/Input";
 import Link from "../../components/Link/Link";
 import { bulb } from "../../vectors";
+import emailjs from "emailjs-com";
 import "./home.scss";
 
 const Home = () => {
+	const [userMessage, setUserMessage] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setUserMessage({ ...userMessage, [name]: value });
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log('12');
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_SERVICE,
+				process.env.REACT_APP_TEMPLATE,
+				e.target,
+				process.env.REACT_APP_USER
+			)
+			.then((res) => console.log(res))
+			.catch((err) => console.log(err));
+		setUserMessage({
+			name: "",
+			email: "",
+			message: "",
+		});
+	};
+
 	return (
 		<main className="home">
 			<section className="home-hero">
@@ -77,6 +109,40 @@ const Home = () => {
 					<li>Backend Development in Express framework.</li>
 					<li>Database managment in SQL and MongoDB</li>
 				</ul>
+			</section>
+			<section className="home-contact">
+				<h1 className="home-contact-heading">Contact Me</h1>
+				<form className="home-contact-form" onSubmit={handleSubmit}>
+					<Input
+						type="text"
+						name="name"
+						required
+						placeholder="Enter Your Name"
+						icon="person"
+						value={userMessage.name}
+						onChange={handleChange}
+					/>
+					<Input
+						type="email"
+						name="email"
+						required
+						placeholder="Enter Your Email"
+						icon="mail"
+						value={userMessage.email}
+						onChange={handleChange}
+					/>
+					<TextArea
+						type="text"
+						name="message"
+						required
+						placeholder="Your Message Here"
+						icon="chat"
+						value={userMessage.message}
+						onChange={handleChange}
+						rows={4}
+					/>
+					<Button text="Send Message" type="submit" />
+				</form>
 			</section>
 		</main>
 	);

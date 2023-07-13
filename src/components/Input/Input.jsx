@@ -39,7 +39,7 @@ const TextArea = ({
 	...rest
 }) => {
 	return (
-		<div className="form-group">
+		<div className="form-group" style={{ height: "fit-content" }}>
 			<label
 				style={{
 					top: 0,
